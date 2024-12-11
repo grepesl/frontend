@@ -1,0 +1,24 @@
+body {
+    background-color: rgb(64, 33, 94);
+}
+p {
+    color: rgb(223, 153, 153);
+}
+h3 {
+    text-align: center;
+}
+
+.bendraDisplayKlase {
+    border: 2px solid black;
+    background-color: white;
+    
+}
+.block {
+    display: block;
+}
+.inline {
+display: inline;
+}
+.inlineBlock {
+    display: inline-block;
+}

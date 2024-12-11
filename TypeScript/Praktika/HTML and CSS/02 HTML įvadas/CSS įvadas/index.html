@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="https://archive.smashing.media/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/d0a4481f-e801-4cb7-9daa-17cdae32cc89/icon-design-21-opt.png">
+    <title>3 Paskaita - CSS įvadas</title>
+</head>
+<body>
+    <header></header>
+    <main>
+        <!--Semantiniai tagai-->
+        <selection>
+            <h2>Samantiniai Tagai</h2>
+            <ul>
+                <li>selection - sekcija skirta kažkokiai potemiai aprašyti</li>
+                    <li>article - straipsnis skirtas kažkokiai temai aprašyti</li>
+                    <li>div - skirtas sukurti blokelį</li>
+                    <li>nav - navigation - navigacija</li>
+            </ul>
+        </selection>
+        <!--CSS rašymo būdai-->
+        <section>
+        <h1> CSS Įvadas</h1>
+            <ul>
+                <li>Inline - linijinis - kai CSS kodas rašomas tago atribute</li>
+                <li>Internal - vidinis - kai CSS kodas rašomas HTML faile, head tago style tago viduje</li>
+                <li>external - išorinis - kai CSS kodas rašomas atskirame CSS faile, kuris yra prijungiamas prie HTML naudojant link tagą</li>
+            </ul>
+        <!--Inline-->
+        <div>
+            <div>
+                <h3>Inline</h3>
+                <p style="color:red; font-size: 18px">
+                    <span style="font-weight:bold; color: blue;">Inline CSS</span> rašymo būdas yra naudojamas norint pasitestuoti kažkokius stilius.<br>
+                    Norint panaudoti inline css rašymo būdą, reikia tagui suteikti style atributą, kurio viduje rašome stilius.
+                </p>
+            </div>
+            <div>
+                <h3>External</h3>
+                <p>
+                    Išorinis CSS rašymo būdas yra naudojamas dažniausiai.<br>
+                    Norint panaudoti išorinį CSS raŠYMO BŪDĄ, REIKIA SUKURTI NAUJĄ css FAILA, KURĮ REIKIA PRIJUNGTI PRIE html Nnaudojant link tagq. O pačiam CSS faile rašyti įprastą CSS kodą su selektorium ir stiliais.
+                </p>
+            </div>
+        </div>
+        </section>
+        <!--Selektoriai-->
+        <selection>
+            <h2>Selektoriai</h2>
+            <p>
+                Selektoriai naudojami tam, kad CSS ra6omi stiliai galėtų būti priskirti tam tikriems HTML elementams.
+            </p>
+                <ul>
+                    <li>tag selektorius - nurodomas tago</li>
+                    <li>multiple  - per kablelį galima pasirinkt kelis selektorius</li>
+                    <li>* - visko selektorius</li>
+                    <li>.class - susigalvojame klases pav patys</li>
+                    <li>#id - susigalvojami id pav patys</li>
+                </ul>
+         <!--Klasės-->
+            <div>
+            <h3>Class</h3>
+            <p>
+                Aprašant klasę CSS pradedame nuo to kad parašome . kuris indikuoja CSS kad bus kuriama klasė 
+                tuomet po taško rašome sugalvotą pav be tarpo ir liet raidžių.
+            </p>
+                </div>
+                <!--ID-->
+                <div>
+                    <h3>ID</h3>
+                    <p>
+                        Apra6ant id CSS pradedame nuo to, kad para6ome groteles kurios indikuoja CCS kad bus kuriama ID. tuomet po groteliu ra6ome
+                        susigalvota pavadinima (be tarpu ir lietuvisku raidziu)<br>
+                        Norint priskirti id HTML reikia elementui suteikti id atribute ir nurofyti norimo id pav.
+                    </p>
+                </div>
+        </selection>
+        <!--Display-->
+        <h2>Display</h2>
+            <ul>
+                <li>Inline - linijinis</li>
+                <li>Block - blokinis</li>
+                <li>Inline-block - linijinis-blokinis</li>
+                <li>Flex - flex</li>
+                <li>Grid - tinklelis</li>
+            </ul>
+        <!--Inline-->
+        <h3>Inline</h3>
+        <p>
+         Inline elementai puslapyje uzima tik tiek vietos kiek reikia atvaizduoti ju turiniui ir dėl to
+         jie gali issidestyti vieni salia kitu<br>
+         Bet linijiniams elementams dydzio nustatymai neveikia.
+        </p>
+        <div>
+            <ul>
+                <spn class="bendraDisplayKlase inline">Inline 1</spn>
+                <spn class="bendraDisplayKlase inline">Inline 2</spn>
+                <spn class="bendraDisplayKlase inline">Inline 3</spn>
+            </ul>
+        </div>
+        <!--Block-->
+        <div>
+            <h3>Block</h3>
+            <p>
+                Blokiniai elementai puslapyje užima visą galimą vietą/tėvinio elemento plotį ir negali būti išdėstyti
+                vieni šalia kitų.<br>
+                Blokiniams elementams dydžio nustatymai veikia.
+            </p>
+            <div>
+                <ul>
+                    <spn class="bendraDisplayKlase block">Block 1</spn>
+                    <spn class="bendraDisplayKlase block">Block 2</spn>
+                    <spn class="bendraDisplayKlase block">Block 3</spn>
+                </ul>
+        </div>
+        <!--Inline-Block-->
+        <div>
+            <h3>Inline-Block</h3>
+            <p>
+            Inline-block užima tik tiek vietos kiek reikia tavaizduoti jų turinį gali būti išdėstyti šalia vienas kito 
+            ir taip pat jiems veikia dydzio nustatymai.
+            </p>
+            <div>
+                <ul>
+                    <spn class="bendraDisplayKlase block inlineBlock">Inline-Block 1</spn>
+                    <spn class="bendraDisplayKlase block inlineBlock">Inline-Block 2</spn>
+                    <spn class="bendraDisplayKlase block inlineBlock">Inline-Block 3</spn>
+                </ul>
+        </div>
+    </main>
+</body>
+</html>
