@@ -1,0 +1,39 @@
+body {
+    background-image: url(https://wallpapercave.com/wp/wp6313344.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.mate {
+    background-color: rgba(0, 0, 0, 0.24);
+    margin: 70px;
+}
+
+h3 {
+    font-size: 100px;
+    margin-left: 60px;
+    margin: 30px;
+    color: black;
+}
+
+nav {
+    text-align: center;
+    word-spacing: 1cm;
+    font-size: 40px;
+    margin: 0;
+    background-color: rgba(0, 0, 0, 0.39);
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+}
+
+.fillin {
+    padding: 5px;
+}
+
+p {
+    color: white;
+}
