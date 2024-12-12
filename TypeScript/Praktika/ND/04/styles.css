@@ -1,0 +1,39 @@
+nav {
+    background-color: rgb(46, 88, 46);
+    text-align: center;
+    word-spacing: 1cm;
+    font-size: 40px;
+    padding: 20px;
+    margin: 0px;
+}
+
+.grey {
+    background-color: rgb(245, 245, 245);
+    padding: 20px;
+}
+
+h2 {
+    background-color:rgb(46, 88, 46);
+    padding: 20px;
+    margin-top: 0;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+}
+
+.green {
+    background-color: rgb(185, 214, 185);
+    padding: 20px;
+}
+
+img {
+    width: auto;
+
+}
+
+section.grey img {
+    width: 100%;
+    margin: 20px 0px;
+}

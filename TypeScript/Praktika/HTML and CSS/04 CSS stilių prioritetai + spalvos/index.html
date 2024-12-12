@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles.css">
+	<title>CSS stilių prioritetai + spalvos</title>
+</head>
+<body>
+ <header></header>
+ <main>
+    <!--Background-->
+    <selection>
+        <h2>Background</h2>
+        <p>Fonas gali būti: vienspalvis, daugiaspalvis, spalvų gradientas, paveiksliukas.</p>
+        <div class="fonodydis vienspalvis"></div>
+        <div class="fonodydis gradient"></div>
+        <div class="fonodydis fixed"></div>
+        <div class="fonodydis picture"></div>
+        <div class="fonodydis picture2">
+        <h3>Antraštė</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae sapiente nisi officia sed maxime 
+        eligendi dolorum minus deserunt totam, quis at, odio repellat laborum laboriosam optio animi fugit libero quae.</p>
+    </div>
+    </selection>
+    <!--Spalvos-->
+    <selection>
+        <p>Spalvos gali būti aprašytos įvairiais būdais. Nuo žodžių pavd, kurie aiškūs eiliniem vartotojui, iki kažkokių 
+        neaiškių kodų, kuriuos supranta ne kiekvienas.</p>
+        <h2>Spalvos</h2>
+        <ul>
+            <il>Spalvos pavadinimas - vos 140 užvadintų spalvų.</il>
+            <li>RGB - trijų spalvų kontrastas (0-250).</li>
+            <li>Hex - trijų spalvų kontrastas (00-FF). </li>
+            <li>HSL - atspalvis, sodrumas, šviesumas.</li>
+        </ul>
+        <div>
+            <h3>Spalvos vardas</h3>
+            <p>Spalva suteikiama nurodant jos vardą.</p>
+
+        </div>
+        <div>
+            <h3>RGB</h3>
+            <p>Susideda iš red green blue spalvų. Ir to pasakoje išgauname ~16,7m spalvų<br>
+            RGB gali turėti permatomumą (opacity) (alpha) tuomet kodas vadinamas RGBA ir turi nebe 3, bet 4 reikšmes, o ta ketvirtoji
+            yra nuo 0 iki 1, 0,001 žingsniu.
+            </p>
+        </div>
+        <div>
+            <h3>Hex kodas</h3>
+            <p>Hex yra trumpinys žodžiui hexdecimal, kuris reiškia šešioliktainis. Kitaip pasakius hex kodas yra šešioliktainė
+            skaičiavimo sistema.<br>
+            Hex kodas susideda iš #RRGGBB, kiekviena raidė yra skaičius nuo 0 iki 15 aprašytas šešioliktaine
+            sistemas ir gaunasi 0 iki f.<br>
+            Pvz.:dešimtainėje 12 yra = šešioliktainėje c.<br>
+            Hex kode permatamumas aprašomas kaip du papildomi simboliai gaunasi #RRGGBB.<br>
+            Hex yra vienintelis spalvos apra6ymo būdas kuris gali būti trumpinamas. Pvz #RRGGBB = #rgb #RRG2PP = negali būti
+            #RG2P
+            </p>
+        </div>
+        </div>
+    </selection>
+    <!--CSS stilių prioritetai-->
+    <selection>
+        <div>
+        <h3>Naršyklės numatytieji stiliai</h3>
+        <p>
+            Beveik kiekvienas tagas turi savo numatytuosius naršyklės stilius.<br>
+            Skirtingos naršyklės gali turėti minimalistinius skirtingus nustatymus naršyklės stiliui.<br>
+            Tam, kad suvienodinti stilius tarp skirtibų naršyklių, arab netgi juos panaikinti yra naudojami 
+            normalize arba reset SCC'ai.
+        </p>
+        <p>
+            <a href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">Normalize CSS</a> - suvienodina stilius 
+            tarp naršyklių.
+            <a href="https://meyerweb.com/eric/tools/css/reset/reset200802.css">Reset CSS</a> - panaikina tagu indentitetą.
+        </p>
+        </div>
+    </selection>
+    <!--Tėviniai ir vaikiniai elementai-->
+        <selection>
+        <h3>Tėviniai ir vaikiniai elementai</h3>
+        <div>
+            <P>
+                Elementas GALI turėti daug vaikinių elementų.<br>
+                Elementas turi tik vieną tėvinį elementą.
+            </P>
+        </div>
+    </selection>
+    <!--Paveld4jimas-->
+    <selection>
+        <div>
+            <h3>Paveldėjimas</h3>
+            <p>
+                Stiliai gali būti paveldimi iš tėvinio elemento į vaikinį elementą.
+            </p>
+        </div>
+    </selection>
+    <!--CSS Stilių Prioritetai-->
+    <selection>
+    <div>
+        <h2>CSS Stilių Prioritetai</h2>
+        <p>
+            <ol>
+                <li>!Important</li>
+                <li>Linijinis/inline</li>
+                <li>Specifikacija
+                    <ol>
+                        <li>id 100</li>
+                        <li>class 010</li>
+                        <li>tag 001</li>
+                    </ol>
+                </li>
+                <li>Eiliškumas/Order</li>
+                <li>Numatytieji/ User agent</li>
+                <li>Paveldėjimas/Inheritance</li>
+            </ol>
+            <p>
+                Elementui gaunant stilius iš selektorių su vienoda specifikacija yra atsižvelgiama į tų selektorių eiliškumą. 
+                Žemiau esantis selektorius su vienoda specifikacija turi aukštesnį prioritetą.
+            </p>
+            <p>
+                Jei įmanoma nenaudoti !Important prierašo. !Important ignoruoja visus prioritetus kitus ir suteikia nurodytą stiliu.
+                Norint perrašyti !Important reikia naudoti kitą !Important.
+            </p>
+            <div class="prioritetai">
+                <a href="https://google.lt">Nuoroda</a>
+                <p class="tekstasred" id="">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus quos, culpa dolores nemo est deserunt 
+                incidunt iure voluptate fuga nostrum assumenda in id mollitia laboriosam repudiandae obcaecati sed quasi 
+                praesentium?</p>
+            </div>
+        </p>
+    </div>
+    </selection>
+ </main>
+ <footer></footer>
+</body>
+</html>

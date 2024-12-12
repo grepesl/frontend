@@ -1,0 +1,42 @@
+.fonodydis {
+    height: 500px;
+}
+.vienspalvis {
+    background-color: hsl(287, 77%, 83%);
+}
+.gradient {
+    background-image: linear-gradient(
+        to right, 
+        #f0a4a4,
+        rgb(153, 153, 243),
+        rgb(211, 255, 211)
+    );
+}
+
+.picture {
+    background-image: url("https://cms.mountpleasant.com.sg/s3media/styles/max_1300x1300/public/2024-02/cats.jpg?VersionId=qEhoTz..6kvuf1pLMzzjfhOQfQS6GSqv&itok=C_RVwCh0");
+    background-size: cover;
+    background-position: center;
+}
+
+.fixed {
+    background-image: url("https://ichef.bbci.co.uk/images/ic/1024xn/p07ryyyj.jpg.webp");
+    background-attachment: fixed;
+    background-size: cover;
+}
+.picture2 {
+    background-image: url("https://bigcatswildcats.com/wp-content/uploads/2024/07/the-small-wild-cats-list.png");
+
+}
+
+.prioritetai {
+    color: green;
+}
+
+p {
+    color:aquamarine
+}
+
+.tekstasred {
+color: red;
+}
