@@ -1,0 +1,76 @@
+.boxModelPvz {
+   /* padding-top: 10px;
+   padding-right: 30px; 
+   padding-bottom: 5px;
+   padding-left: 50px; */
+   border-right: 6px dotted rgb(201, 29, 29);
+   display: block;
+   width: 150px;
+}
+
+.margin {
+    margin: 10px auto;
+}
+
+.positionContaine {
+    width: 800px;
+    height: 300px;
+    border: 1px solid black;
+}
+
+.kvadratas {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    border: 5px dashed orange;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    line-height: 100px;
+}
+   
+.static {
+    position: static;
+}
+
+.relative {
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.fixed {
+    position: fixed;
+}
+
+.sticky {
+    position: sticky;
+}
+
+.top {
+    top: 20px
+}
+
+.right {
+    right: 50px;
+}
+
+.bottom {
+    bottom: 10px;
+}
+
+.left {
+    left: 100px;
+}
+
+.z10 {
+    z-index: 10;
+}
+
+.z5 {
+    z-index: 5;
+}
+
