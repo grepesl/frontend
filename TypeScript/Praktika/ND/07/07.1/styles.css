@@ -1,0 +1,42 @@
+form, h1, h4 {
+    text-align: center;
+    color: white;
+}
+
+body {
+    background-color: rgb(21, 49, 40);
+}
+
+h1 {
+    font-size: 35px;
+}
+
+
+input:read-only {
+    background-color: gray;
+    font-weight: bold;
+}
+
+[name="age"] {
+    width: 30px;
+}
+
+input[type="submit"]:hover {
+    background-color: blue;
+}
+
+.customInput > input:checked + label {
+    color: brown;
+}
+
+input:valid {
+    border: 3px solid green;
+}
+
+input:invalid {
+    border: 1px solid red;
+}
+
+input[type="submit"] {
+    border: none;
+}

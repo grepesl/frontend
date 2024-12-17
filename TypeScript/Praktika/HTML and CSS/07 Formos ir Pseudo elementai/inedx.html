@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles.css">
+	<title>Formos ir Pseudo Elementai</title>
+</head>
+<body>
+<header></header>
+<main>
+    <!--Form, Form Pseudo Class, Pseudo Elements, Nav?-->
+    <!--Form-->
+    <section>
+        <h2>Form</h2>
+        <p>
+            Formos reikalingos norint passimti vertotojo 5vestis. Pla2iau apie tai JS temos metu.
+        </p>
+        <h3>Formos Tagai</h3>
+        <ul>
+            <li>form - formos tagai</li>
+            <li>label - formos 5vesties etiketės/pavadinimas</li>
+            <li>input - formos įvestis laukas (įvairus)</li>
+            <li>textarea - formos įvesties laukas (dideliam teksto laukui)</li>
+            <li>select - opcijų pasirinkimo laukas (nedideliam kiekui opcijų)</li>
+            <li>detalist - opcijų pasirinkimo laukas (dideliam kiekui opcijų)</li>
+            <li>option - opcija</li>
+            <li>output - formos atsakymui išvesti</li>
+            <li>button - mygtukas (asmeniškai nesiūlo naudoti formose)</li>
+        </ul>
+        <h3>Formos tagu atributai</h3>
+        <ul>
+            <li>type - input - nurodo tipą</li>
+                <ul>
+                    <li>text - tekstas</li>
+                    <li>password - slapyvardis (atvaizduojamas kaip taškeliai)</li>
+                    <li>number - skaičius</li>
+                    <li>email - elektroninis paštas</li>
+                    <li>url - nuoroda</li>
+                    <li>checkbow - daugelio pasirinkims</li>
+                    <li>radio - vieno pasirinkimas</li>
+                    <li>submit - formos pateikimas</li>
+                    <li>file - failo iš kompiuterio pasirinkimas</li>
+                    <li>tel - telefonas</li>
+                    <li>range - skaičiaus pasirinkimas slenkančioje juostoje</li>
+                    <li>date - datos pasirinkimas (matų, mėnesio, dienos)</li>
+                    <li>datetime-local - datos ir laiko pasirinkimas (metų, mėnesio, dienos, valandos, minutės)</li>
+                    <li>month - mėnesio pasirinkimas</li>
+                    <li>week - savaitės pasirinkimas</li>
+                    <li>time - laiko pasirinkimas</li>
+                    <li>color - spalvos pasirinkimas</li>
+                    <li>button - mygtukas be funkcionalumo</li>
+                    <li>image - paveiksliukas skirtas pateikti formą</li>
+                    <li>hidden - paslėpta įvestis</li>
+                    <li>reset - išvalo visos formos įvestis</li>
+                    <li>search - paieškos laukas</li>
+                </ul>
+            <li>for - label - nurodo kuriai 5ves2iai priskirti labelį </li>
+            <li>id - įvestims  (input, textarea...) - apjungia labelį su įvestimi</li>
+            <li>name - įvestims - suteikia įvesčiai vardą (susigalvotą ir jis dažnu atveju toks pats kaip ir id)</li>
+            <li>value - įvestims - įvesties reikšmė</li>
+            <li>required - įvestim - privaloma įvesti</li>
+            <li>placeholder - input+textarea - pavyzdinis tekstas (laukelyje vėliau dingsta kai pradedi rašyt)</li>
+            <li>min - input(number/range/date)</li>
+            <li>max - input(number/range/date)</li>
+            <li>step - input(number/rage) - kitimo žingsnis</li>
+            <li>accept - input(file) - kokio tipo failai leistini</li>
+            <li>pattern - input(tel/...) - nurodo kokia turi būti įvesties seka (naudojant regex)</li>
+            <li>rows - textarea - eilučių kiekį kiek galima vesti (vizuolus dydis išgaunamas)</li>
+            <li>cols - textarea - stulpelių kiekį kiek galima vesti (vizuolus dydis išgaunamas)</li>
+            <li>checked - input(checkbox/radio) - iš anksto pažymėtas variantas</li>
+            <li>selected - option - iš anksto parinkta opcija</li>
+            <li>disabled - įvestis - išjungtas įvesties laukas</li>
+            <li>readonly - įvestims - neleidžiama keisti reikšmės</li>
+            <li>multiple - select - leidžia pasirinkt daug variantų</li>
+            <li>...</li>
+            <li>...</li>
+        </ul>
+        <h3>Test forma</h3>
+        <form>
+            <div>
+                <label for="vardas">Vardas</label>
+                <input type="text" name="vardas" id="vardas">
+            </div>
+            <div>
+                <label for="slaptazodis">Slapyvardis</label>
+                <input type="password" name="slaptazodis" id="slaptazodis">
+            </div>
+            <div>
+                <label for="el_pastas">Paštas</label>
+                <input type="email" name="el_pastas" id="el_pastas" placeholder="tavo@pastas.com">
+            </div>
+            <div>
+                <label for="amzius">Amžius</label>
+                <input type="number" name="amzius" id="amzius" step="5" min="10" max="100">
+            </div>
+            <div>
+                <label for="data">Data</label>
+                <input type="date" name="data" id="data">
+            </div>
+            <div>
+                <label for="spalva">Spalva</label>
+                <input type="color" name="spalva" id="spalva">
+            </div>
+            <div>
+                <input type="submit" id="" value="Submit">
+                <input type="button" id="" value="Tekstas mygtukas">
+            </div>
+            <label>Mėgtsamiausia Programavimo kalbos</label>
+            <div class="customInput">
+                <input type="radio" name="kalbos" id="py">
+                <label for="py">Python</label>
+                <input type="radio" name="kalbos" id="java" checked>
+                <label for="java">Java</label>
+                <input type="radio" name="kalbos" id="js">
+                <label for="js">JavaScript</label>
+            </div>
+            <div>
+                <label>Moku šias programavimo kalbos</label>
+                <label for="py2">Python</label>
+                <input type="checkbox" name="kalbos2" id="py2">
+                <label for="java2">Java</label>
+                <input type="checkbox" name="kalbos2" id="java2">
+                <label for="js2">JavaScript</label>
+                <input type="checkbox" name="kalbos2" id="js2">
+            </div>
+            <div>
+                <label for="">Pasirink savo miestą</label>
+                <select name="miestas" id="miestas">
+                    <option value="Kaunas">Kaunas</option>
+                    <option value="Vilnius">Vilnius</option>
+                    <option value="Klaipėda">Klaipėda</option>
+                    <option value="Alytus">Alytus</option>
+                    <option value="Utena">Utena</option>
+            </div>
+            <div>
+                <label for="aprasymas">Aprašymas</label>
+                <textarea name="aprasymas" id="aprasymas" cols="5" rows="5"></textarea>
+            </div>
+            <div>
+                <label for="dataListSalis">Pasirink savo šalį</label>
+                <input list="salis" name="" id="dataListSalis">
+                <datalist id="salis">
+                    <option value="Lietuva">Lithuania</option>
+                    <option value="Latvija"></option>
+                    <option value="Estija"></option>
+                    <option value="Lenkija"></option>
+                    <option value="Anglija"></option>
+                    <option value="Turkija"></option>
+                    <option value="Japonija"></option>
+                    <option value="Kipras"></option>
+                    <option value="Graikija"></option>
+                    <option value="Amerika"></option>
+                    <option value="Austrija"></option>
+                    <option value="Australija"></option>
+                    <option value="Nyderlandai"></option>
+                    <option value="Sebia"></option>
+                    <option value="Baltarusija"></option>
+                    <option value="Rusija"></option>
+                    <option value="Vokietija"></option>
+                    <option value="Prancūzija"></option>
+                    <option value="Ispanija"></option>
+                    <option value="Italija"></option>
+                    <option value="Korėja"></option>
+                </datalist>
+            </div>
+        </form>
+    </section>
+    <!--Pseudo Class (Form)-->
+    <section>
+        <h2>Pseudo Class (Form)</h2>
+        <ul>
+            <li>:checked - pažymėtas(checkbox/radio)</li>
+            <li>:default - pradinis (kur pradžioje buvo: checked arba selected)</li>
+            <li>:disabled - turi disabled atributą</li>
+            <li>:enabled - neturi disabled atributo</li>
+            <li>:focused - šiuo metu fokusuojama įvestis</li>
+            <li>:in-range - min-max ribose</li>
+            <li>:out-of-range - už min-max ribų</li>
+            <li>:indeterminate - neapibrėžta reikšmė (nesvarbu)</li>
+            <li>:valid - tinkama reikšmė</li>
+            <li>:invalid - netinkama reikšmė</li>
+            <li>:required - privaloma įvestis</li>
+            <li>:optional - neprivaloma įvestis (neturintis required atributo)</li>
+            <li>:readonly - elementas turi readonly atributą</li>
+            <li>:read-write - elementas neturi readonly atributo</li>
+            <li>...</li>
+            <li>..</li>
+            <li>.</li>
+        </ul>
+    </section>
+    <!--Pseudo Elements-->
+    <section>
+        <h2>Pseudo Class</h2>
+        <ul>
+            <li>::placeholder - parenka placeholderio turinį</li>
+            <li>::before -sukuria turinį prieš elemnto contentą </li>
+            <li>::after - sukuria turinį po elemnto content</li>
+            <li>::marker - sąrašo elemntų žymės</li>
+            <li>::selection - pažymėtas turinys (pelyte kai pvz teksta pažymi)</li>
+            <li>::first-letter - pirmoji raidė</li>
+            <li>::firts-line - pirma eilutė</li>
+            <li>::-webkit-scrollbar</li>
+            <li>-webkit-scrollbar-thumb</li>
+            <li>-webkit-scrollbar-track</li>
+            <li>-webkit...</li>
+        </ul>
+    </section>
+</main>
+</body>
+</html>

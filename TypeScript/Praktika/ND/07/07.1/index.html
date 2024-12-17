@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles.css">
+	<title></title>
+</head>
+<body>
+<header></header>
+    <main>
+        <section>
+            <h1>Register To Fancy Form</h1>
+            <h4>All fields are required unless marked as "optional"</h4>
+            <form>
+                <div>
+                    <label for="id">Your Unique ID that you can't change</label><br>
+                    <input type="text" name="id" id="id" value="YBX0123" readonly>
+                </div><br>
+                <div>
+                    <label for="el_pastas">Email:</label><br>
+                    <input type="email" name="el_pastas" id="el_pastas" required>
+                </div><br>
+                <div>
+                    <label for="password">Password:</label><br>
+                    <input type="password" name="password" id="password">
+                </div><br>
+                <div>
+                    <label for="age">Age:</label><br>
+                    <input type="number" name="age" id="age" min="18" max="65">
+                </div><br>
+                <div>
+                    <label for="aprasymas">Tell us alittle about yourself (optional):</label><br>
+                    <textarea name="aprasymas" id="aprasymas" cols="25" rows="1"></textarea>
+                </div><br>
+                <div class="customInput">
+                    <input type="checkbox" name="terms" id="terms2" required>
+                    <label>I agree with the Terms & Conditions </label>
+                </div><br>
+                <div>
+                    <input type="submit" id="" value="Register">
+                </div>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
