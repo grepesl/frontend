@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Table ir Pseudo Klasės</title> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <!--Table, Attribute Selectors, Pseudo Class, Icon-->
+    <header></header>
+    <main>
+        <!--Table-->
+        <section class="selektoriai">
+            <h2>Table</h2>
+            <ul>
+                <li>Table</li>
+                <li>thead - tablehead - lentelės stulpelių pavadinimai.</li>
+                <li>tbody - table body - lentelės duomenys.</li>
+                <li>tfoot - table foot - lentelės duomenų išvestinės (sumos, vidurkiai, ...)</li>
+                <li>tr - table row - lentelės eilutė.</li>
+                <li>th - table heading - lentelės stulpelio duomenų pavadinimas.</li>
+                <li>td - table data - lentelės duomuo.</li>
+                <li>caption - lentelės pavadinimas.</li>
+                <li>colgroup - collumn group - stulpelių grupė (bet geriau grūpuoti per ccs).</li>
+                <li>col - collumn - stulpelių paskirstymas.</li>
+            </ul>
+            <table>
+                <caption>Savaitės Grafikas</caption>
+                <colgroup>
+                    <col class="firstCol">
+                    <col class="secondCol">
+                    <col span="3">
+                    <col>
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>Pirmadienis</th>
+                        <th>Antradienis</th>
+                        <th>Trečiadienis</th>
+                        <th>Ketvirtadienis</th>
+                        <th>Penktadienis</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>08:00</td>
+                        <td>Table and Pseudo Class</td>
+                        <td>Forms and Pseudo Elements</td>
+                        <td>Flex</td>
+                        <td>Grid</td>
+                        <td>Flex and Grid</td>
+                    </tr>
+                    <tr>
+                        <td>12:00</td>
+                        <td colspan="5">Pietūs</td>
+                    </tr>
+                    <tr>
+                        <td>13:00</td>
+                        <td>CAO 7 8</td>
+                        <td>CAO 9 10</td>
+                        <td>CAO 11</td>
+                        <td>CAO 13</td>
+                        <td>CAO 12</td>
+                    </tr>
+                    <tr>
+                        <td>16:00</td>
+                        <td colspan="5">Laisvė</td>
+                    </tr>
+                </tbody>
+                <tfoot></tfoot>
+            </table>
+        </section>
+        <!--Selectors-->
+        <section>
+            <h2>Selectors</h2>
+            <ul>
+                <li>[Attribute] - atributo vardas</li>
+                <li>[Attribute="value"] - atributo vardas ir tiksli reikšmė</li>
+                <li>[Attribute~="value"] - atributo vardas ir reikšmės žodis</li> 
+                <li>[Attribute*="value"] - atributo vardas ir tokia pati reikšmės simbolių seka</li>
+                <li>[Attribute^="value"] - atributo vardas ir reikšmė prasidedanti nurodyta seka</li>
+                <li>[Attribute$="value"] - atributo vardas ir reikšmė pasibaigoanti nurodyta seka</li>
+                <li>[Attribute|="value"] - atributo vardas ir reikšmė prasidedanti nurodyta reikšmė arba reikšmė-</li>
+            </ul>
+        <!--Pseudo Class-->
+        <h2>Pseudo Class</h2>
+        <ul>
+            <ul>
+                <li>:link - nelankyta nuorada</li>
+                <li>:visited - lankyta nuorada</li>
+                <li>:hover - kursorius užėjęs ant elemento (ne tik nuorodom)</li>
+                <li>:active - nuorados paspaudimo momentas</li>
+            </ul>
+            <li>:first-child - pirmasis vaikinis</li>
+            <li>:last-child - paskutinis vaikinis</li>
+            <li>:only-child - vienintelis vaikinis</li>
+            <li>:first-of-type - pirmasisi tokio tipo vaikinis</li>
+            <li>:last-of-type - paskutinis tokio tipo vaikinis</li>
+            <li>:only-of-type - vienintelis tokio tipo vaikinis</li>
+            <li>:nth-child(n) - n'tąjį vaikinį</li>
+            <li>:nth-last-child(n) - n'tąjį vaikinė nuo galo</li>
+            <li>:nth-of-type(n) - n'tąjį tokio pat tipo</li>
+            <li>:nth-last-of-type(n) - n'tąjį tokio tipo vaikinį nuo galo</li>
+            <li>(skaičius) kelintą, (skaičius n) kas kelintą, (skaičius n + skaičius) nuo kurios kas kelintą</li>
+            <ul>
+                <li>:root</li>
+                <li>:not(selector)</li>
+                <li>:is()</li>
+                <li>:has()</li>
+                <li>:where()</li>
+                <li>...</li>
+            </ul>
+        </ul>
+        <div>
+            <h3>Pavyzdžiai</h3>
+            <a href="https://lt.wikipedia.org/wiki/%C5%A0uo">Random Nuorada</a>
+            <a href="https://lt.wikipedia.org/wiki/Kategorija:%C5%A0un%C5%B3_veisl%C4%97s">Random Nuorada</a>
+            <div>
+                <p>vienintelis vaikas</p>
+            </div>
+            <p>Ne vienintelis vaikas</p>
+        </div>
+        </section>
+        <!--Icons-->
+        <section>
+            <h2>Icons</h2>
+            <p>
+                Icons neturi savo tago. Joms puslapyje atvaizduoti yra naudojami "i" arba "span" tag'ai. 
+            </p>
+            <h3>Icon bibliotekos</h3>
+            <ul>
+                <li><a>FontAwesome</a></li>
+                <li><a>Bootstrap</a></li>
+                <li>....</li>
+            </ul>
+            <p> 
+                Norint naudoti icon iš kažkurios bibliotekos, reikia prikabinti tos bibliotekos CDN (nuorodą)
+            </p>
+            <p>
+                Norint keisti ikonų stilių (spalvą, dydį...) reikia jas keisti kaip tekstą, o ne kaip paveikslėlį.
+            </p>
+            <i class="bi bi-xbox"></i>
+            <span class="bi bi-xbox ikona"></i>
+        </section>
+    </main>
+    <footer></footer>
+</body>
+</html>

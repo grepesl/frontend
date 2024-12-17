@@ -1,0 +1,81 @@
+table {
+    border: 1px solid black;
+    border-collapse: collapse;
+    /* margin: 0 auto; */
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 3px 5px;
+    text-align: center;
+}
+
+.firstCol {
+background-color: aqua;
+font-weight: bold;
+}
+
+.secondCol {
+background-color: rgb(255, 255, 146);
+}
+
+/* .thirdToFifthCol {
+
+}
+
+.sixthCol {
+
+} */
+
+[colspan='5'] {
+    background-color: black;
+    font-weight: bold;
+    color: yellowgreen;
+}
+
+a:link {
+    color: violet;
+}
+
+a:visited {
+    color: slateblue;
+}
+
+a:hover {
+    color: tomato;
+}
+
+a:active {
+    color: rgb(238, 255, 0);
+}
+
+li:hover {
+    background-color: black;
+    color: white;
+}
+
+td:first-child {
+    font-weight: bold
+}
+
+p:only-child {
+    font-size: 3px;
+}
+
+p:only-of-type {
+    background-color: violet;
+}
+
+li:nth-child(3) {
+    background-color: blue;
+}
+
+.selektoriai > li:nth-child(2n) {
+    background-color: chartreuse;
+}
+
+.ikona {
+    background-color: aquamarine;
+    color: red;
+    font-size: 30px;
+}

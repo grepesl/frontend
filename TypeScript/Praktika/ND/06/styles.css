@@ -1,0 +1,103 @@
+header {
+    background-color: black;
+}
+
+nav {
+    background-color: rgb(206, 175, 73);
+    padding: 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+img {
+    width: 200px; 
+    margin: 0 auto;
+    display: block;
+}
+
+header {
+    text-align: right;
+    word-spacing: 15px;
+}
+
+/* body {
+    max-width: 1200px;
+} */
+
+h1, h2 {
+    /* color: white; */
+    color:rgb(57, 155, 241);
+    text-align: left;
+    word-spacing: 1px;
+    padding: 20px;
+}
+
+.bBackground {
+    background-color: red;
+    border-radius: 5px;
+    color: white;
+    padding: 4px 30px;
+    display: block;
+    width: 70px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.background {
+    background-color: rgb(248, 248, 248);
+}
+
+h1, h2, nav, table, ul, div > p  {
+    margin: 0 200px;
+}
+
+.background2 {
+    background-color: rgb(0, 0, 53);
+    padding-bottom: 20px;
+}
+
+table {
+    border-collapse: collapse;
+    border: 3px solid rgb(143, 0, 0);
+    width: 80%;
+    margin: 0 auto;
+    }
+
+th, td:first-child {
+    border: 3px solid rgb(143, 0, 0);
+    padding: 3px 300px;
+    color: white;
+    text-align: center;
+}
+
+td:last-child {
+    border: 3px solid rgb(143, 0, 0);
+    padding: 5px 10px;
+    color: white;
+    text-align: right; 
+}
+
+.goUp {
+    padding: 4px 30px;
+    display: block;
+    width: 70px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.copyright {
+    text-align: center;
+    background-color: rgb(228, 197, 95);
+    padding: 20px 0;
+    color: white;
+    margin: 0;
+}
+
+
