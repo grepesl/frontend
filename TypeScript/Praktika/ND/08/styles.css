@@ -1,0 +1,81 @@
+header {
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 50px;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    background-color: rgb(0, 0, 0);
+        color: white;
+}
+
+header > img {
+    height: 100%;
+    width: auto;
+}
+
+header > nav > ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 40px;
+    list-style-type: none;
+}
+
+header > nav > ul > li > a {
+    text-decoration: none;
+    color: white;
+}
+
+.basicFlex {
+    display: flex;
+    justify-content: center;
+}
+
+.basicFlex > div:first-child {
+    width: 40%;
+    height: 50%;
+    font-size: 32px;
+    margin: 20px;
+    text-align: justify;
+}
+
+
+.basicFlex > div:last-child {
+    width: 60%;
+    height: 50%;
+    font-size: 32px;
+    margin: 20px;
+    text-align: justify;
+}
+
+div > ul > li {
+    margin-left: 50px;
+}
+
+div > div > a.read2 {
+    display: flex;
+    justify-content: flex-end;
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    margin-left: 86%;
+    padding-right: 10px;
+}
+
+div > div > a.read {
+    display: flex;
+    justify-content: flex-end;
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    margin-left: 79%;
+    padding-right: 10px;
+}
+
+div > div > img {
+    max-width: 50%;
+    float: left;
+    margin: 0 20px 20px 0;
+}

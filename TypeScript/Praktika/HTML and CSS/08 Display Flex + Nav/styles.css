@@ -1,0 +1,105 @@
+/* table pvz */
+
+/* .ndTable td:hover::before {
+    content:"";
+    width: 100%;
+    height: 10000px;
+    background-color:red;
+    position: absolute;
+    top: -5000px;
+    z-index: -1;
+}
+
+.ndTable tr:hover {
+    background-color: blue;
+}
+
+.ndTable {
+    overflow: hidden;
+}
+
+.ndTable td {
+    position: relative;
+} */
+
+/*Table pvz end*/
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    height: 500vh;
+}
+
+.pvzContainer {
+    border: 1px solid black;   
+    height: 500px;
+    display: flex;
+    /* flex-direction: row;
+    flex-wrap: wrap; */
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.pvzContainer > div {
+    box-sizing: border-box;
+    width: 100px;
+    height: 100px;
+    background-color: blueviolet;
+    border: 3px solid orange;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.order1 {
+    order: 1;
+}
+
+.order2 {
+    order: 2;
+}
+
+.order-5 {
+    order: -5;
+}
+
+.basicFlex {
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: center; */
+}
+
+header {
+    height: 60px;
+    border-bottom: 3px solid rgb(155, 52, 52);
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    background-color: white;
+}
+
+header > img {
+    height: 100%;
+    width: auto;
+}
+
+header > nav > ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 10px;
+    list-style-type: none;
+}
+
+header > nav > ul > li > a {
+    text-decoration: none;
+}
+
+[id] {
+    scroll-margin-top: 60px; 
+    /*nustatom toki koks header nustatytas*/
+}
