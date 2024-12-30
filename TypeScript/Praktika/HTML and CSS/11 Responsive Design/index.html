@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles.css">
+	<title></title>
+</head>
+<body>
+<header></header>
+<main>
+    <!--Responsive Design-->
+    <section>
+        <h2>Responsive Design</h2>
+        <p>
+            Išdėstyti elementus ekrane skirtingai esant skirtingioems ekranų dydžiams.
+        </p>
+        <h3><a href="https://getbootstrap.com/docs/5.3/layout/breakpoints/#media-queries" target="_blank">Breakpoints</a></h3>
+        <p>
+            Brekpoint - ekrano lūžis - kai iš vieno išdėstymo, pvz telefoninio dydžio yra pakeičiamas elementų išdėstymas į kitą išdėstymą, pvz plančetinio dydžio.<br>
+            Breakpointų galima prikurti kiek tik nori (dažniausiai 3), kokiuose tiktais nori taškuose.
+        </p>
+        <ol>
+            <li>x-small - portait phones - 0px => 575px</li>
+            <li>small - landscape phone - 576px => 767px</li>
+            <li>medium - tablets - 768px => 991px</li>
+            <li>large - laptop - 992px => 1199px</li>
+            <li>x-large - sekstop - 1200px => 1400px</li>
+            <li>xx-large - large dekstop - 1400px => infinity</li>
+        </ol>
+        <p>
+            Tam, kad būtų sukutas vadinamasis breakpointas css reikia aprašyti jo media query.<br>
+            Media wuery apsirašo tokiu būdu: @media (min-width: number_px){... CS ...}
+        </p>
+        <p>
+            Meida query nesuteikia jokių papildomų stiliaus prioritetų, dėl to madie query reikia rašyti teisingu eiliškumu.<br>
+            Media query stiliai nepradingsta, pasiekus naują media query.
+        </p>
+    </section>
+    <!--Mobile First-->
+    <section>
+        <p>
+            Mobile first dizaino principas yra tas, kad pradžioje puslapis yra pritaikomas mobiliesiems, o tik po to judama prie kitų ekrano dydžių.<br>
+            Taip yra daroma dėl įvairių priežasčių: daugiau vartotojų naudoja mobiliuosius naršant internete; mažiau vietos informacijai - reikia atvaizduoti svarbiausią; lengviau yra pridėti turinį negu atimti...
+        </p>
+        <p>
+            Rašant mobile first media query, būtina naudoti min-width, ne max-width nustatymą.
+        </p>
+        <h4>Keletas straipsnių apie mobile first:</h4>
+        <a href="" target="_blank"></a><br>
+        <a href="" target="_blank"></a><br>
+        <a href="" target="_blank"></a><br>
+    </section>
+    <section id="task2">
+        <div>Header</div>
+        <div>main</div>
+        <div>widget</div>
+        <div>footer</div>
+    </section>
+</main>
+</body>
+</html>

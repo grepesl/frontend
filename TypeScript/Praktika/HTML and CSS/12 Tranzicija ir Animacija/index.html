@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles.css">
+	<title></title>
+</head>
+<body>
+<header></header>
+<main>
+    <!--Transform-->
+    <section>
+        <h2>Transform</h2>
+        <P>
+            tRANSFORM YRA stilius, kuris nusako kad elementas bus kažkaip pakeičiamas, o visi žemiau išvardinti dalykai yra šio stiliaus nustatymai.
+        </P>
+        <ul>
+            <li>rotate(Z) - sukasi aplink Z ašį</li>
+            <li>rotateZ(Z) - sukasi aplink Z ašį</li>
+            <li>rotateX(X) - sukasi aplink X ašį</li>
+            <li>rotateY(Y) - sukasi aplink Y ašį</li>
+            <li>translate(X) - pastūmimas X ašyje</li>
+            <li>translate(Y) - pastūmimas Y ašyje</li>
+            <li>translate(X, Y) - pastūmimas X ir Y ašyse</li>
+            <li>scale(X) - keičia elemento dydį X ašyje</li>
+            <li>scale(Y) - keičia elemento dydį Y ašyje</li>
+            <li>scale(X, Y) - keičia elemento dydį X ir Y ašyse. Parašius vieną rodmenį/argumentą jis taikomas abejoms ašims</li>
+        </ul>
+        <div class="transformTest">
+            <div>Rotate</div>
+            <div>Translate</div>
+            <div>Scale</div>
+            <div>Skew</div>
+            <div>Combined</div>
+        </div>
+        <p>
+            Rotate, translate ir scale nustatymai jau turi savo atskyrus stilius ir tamkad juos panaudotume nebebutina rasyti kaip funkciju trandform stiliaus viduje.
+        </p>
+        <h3>Transform-origin</h3>
+        <p>
+            Transform origin nusako nuo kurios elemento vietos vyksta rotate, scale ir skew kitimai.<br>
+            Transform-origin default yra elemento centre.
+        </p>
+    </section>
+    <!--Transition-->
+    <section>
+        <h2>Transition</h2>
+        <p>
+            Kontroliuoja stilių perėjimą iš vieno į kitą.<br>
+            Tranzicija dažniausiai yra daroma kai ant elemento yra užeinamas pelės kursorius arba kaqi jis yra paspaudžiamas.<br>
+            Tranzicijos kitimas vyksta vieną sykį iš vieno stiliaus į kitą stiliu ir viskas.
+        </p>
+        <ul>
+            <li>transition-duration: seconds</li>
+            <li>transition-timing-function: timin-function</li>
+            <li>transition-delay: seconds (defailt - 0s)</li>
+            <li>transition-property: style</li>
+            <li>transition-behavior: normal(default) | allow-discrete;</li>
+            <li>transition: transition-duration transition-delay transition-timing-function transition-property transition-behavior</li>
+        </ul>
+        <div class="transitionTest">Transition</div>
+    </section>
+    <!--Animation-->
+    <h2>Animation</h2>
+    <p>
+        kontroliuoja stilių perėjimą iš vieno į kitą<br>
+        Animacijai nebūtina vartotojo unterakcija ir ji gali vykti kiek tik nori artų.<br>
+        Animacijos metu tie patys stiliai gali turėti daugelį skirtingų nustatymų skirtingu animacijos metu.
+    </p>
+    <ul>
+        <li>animation-duration: seconds</li>
+        <li>animation-delay: seconds</li>
+        <li>animation-timing-function: timing-function</li>
+        <li>animation-name: susigalvotas vardas</li>
+        <li>animation-iteration-count: number | infinite</li>
+        <li>animation-direction: normal | reverse | alternate(nuo pradzios i pabaiga ir tada nuo pabaigos i pradzia) | reverse-alternate</li>
+        <li>animation-play-state: running | paused</li>
+        <li>animation-fill-mode: none | forwards | backwards | both</li>
+        <li>animation-composition: replace | add | accumulate</li>
+        <li>animation: combination (visų apjungimas) (duration -> delay, o kiti nesvarbu eiliškumas)</li>
+    </ul>
+    <p>
+        Tam, kad animacijos nustatymai būtų reikšmingi, reikia pačios animacijos.<br>
+        O pati animacija aprašoma kryframes pagalba.<br>
+        @keyframe susigalvotas vardas { 0%{} n%{} n+1%{} ... 100%{} }
+    </p>
+    <div class="animationContainer">
+        <div>Animacija</div>
+    </div>
+</main>
+</body>
+</html>

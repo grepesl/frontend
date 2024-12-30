@@ -1,0 +1,51 @@
+* {
+    box-sizing: border-box;
+}
+
+/* Bendri stiliai */
+header {
+    padding: 0 20px
+}
+
+ footer, section {
+    padding: 20px 20px;
+}
+
+/*header8*/
+
+header {
+    width: 100%;
+    height: 60px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header >div:nth-child(1) {
+     display: flex;
+     align-items: center;
+     height: 100%;
+}
+
+header > div:nth-child(1) > img {
+    height: 50%;
+}
+
+/* hero */
+section#hero {
+    padding-top: 100px;
+    background-image: linear-gradient(to right bottom) 
+    rgb(158, 158, 255)
+    rgb(176, 255, 216)
+    ;
+}
+
+section#hero > div {
+    flex: 1 60%;
+}
+
+section#hero > span {
+    flex: 1 40%;
+    border: 1px solid black;
+}

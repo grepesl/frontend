@@ -1,0 +1,146 @@
+body {
+    background-color: rgb(167, 167, 167);
+}
+
+header {
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    align-items: center;
+    background-color: white;
+}
+
+header > img {
+    height: 100%;
+    width: auto;
+    padding-left: 20%;
+}
+
+header > nav > ul {
+    /* margin: 0;
+    padding: 0 20; */
+    display: flex;
+    gap: 10px;
+    list-style-type: none;
+}
+
+header > nav > ul > li > a {
+    text-decoration: none;
+}
+
+nav {
+    padding-right: 20%;
+}
+
+main {
+    background-color: white;
+    padding: 20px;
+    margin: 0 21%;
+    border-radius: 5px;
+    color: rgb(105, 105, 105);
+}
+
+h1 {
+    margin: 0;
+}
+
+
+table, thead, tbody {
+  width: 100%;
+  text-align: left;
+  border-spacing: 0;
+}
+
+th, td {
+    border-bottom: 1px solid black;
+    padding: 10px 0;
+}
+
+footer {
+    color: #727272;
+    text-align: center;
+}
+
+@media (min-width: 0px) {
+    header, nav > ul {
+        display: flex;
+        flex-direction: column;
+    }
+    header {
+        height: 200px;
+    }
+    header > img {
+        height: 60%;
+        padding: 0;
+    }
+    main {
+        background-color: white;
+        padding: 20px;
+        margin: 0 1%;
+        border-radius: 5px;
+        color: rgb(105, 105, 105);
+    }
+    th, td {
+        border-bottom: 1px solid black;
+        padding: 10px 0;
+    }
+}
+
+@media (min-width: 576px) {
+    header {
+        height: 60px;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 20px;
+        align-items: center;
+        background-color: white;
+    }
+    
+    header > img {
+        height: 100%;
+        width: auto;
+        padding-left: 20%;
+    }
+    
+    header, nav > ul {
+        /* margin: 0;
+        padding: 0 20; */
+        flex-direction: row;
+        display: flex;
+        gap: 10px;
+        list-style-type: none;
+    }
+    
+    header > nav > ul > li > a {
+        text-decoration: none;
+    }
+    
+    nav {
+        padding-right: 20%;
+    }
+    
+    main {
+        background-color: white;
+        padding: 20px;
+        margin: 0 21%;
+        border-radius: 5px;
+        color: rgb(105, 105, 105);
+    }
+    
+    h1 {
+        margin: 0;
+    }
+    
+    
+    table, thead, tbody {
+      width: 100%;
+      text-align: left;
+      border-spacing: 0;
+    }
+    
+    th, td {
+        border-bottom: 1px solid black;
+        padding: 10px 0;
+    }
+}

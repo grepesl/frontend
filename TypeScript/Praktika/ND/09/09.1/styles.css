@@ -38,47 +38,39 @@
 } 
 
 .flex {
-    border: 1px solid black;   
-    height: 1000px;
-    width: 2030px;
+    width: 100%;
+    height: 300px;
+
     display: flex;
-    /* flex-direction: row;
-    flex-wrap: wrap; */
-    flex-flow: row wrap;
-    /* justify-content: center; */
-    gap: 20px;
-        justify-content: flex-end;
-
+    gap: 10px;
 }
 
-.flex > div {
-    box-sizing: border-box;
-    width: 100px;
-    height: 100px;
-    background-color: blueviolet;
-    border: 3px solid orange;
-    font-size: 30px;
+.container1, .container234 {
+    width: 100%;
 }
 
-.flex > div:nth-child(1) {
-    height: 500px;
-    width: 1000px;
-    align-self: flex-start;
+.container234 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
-.flex > div:nth-child(2) {
-    height: 250px;
-    width: 1000px;
-    /* align-self: flex-start; */
+.container2, .container34 {
+    height: 100%;
 }
 
-.flex > div:nth-child(3) {
-    height: 250px;
-    width: 500px;
-    /* align-self: flex-end; */}
+.container34 {
+    display: flex;
+    gap: 10px;
+}
 
-.flex > div:nth-child(4) {
-    height: 250px;
-    width: 500px;
-    /* justify-content: flex-end; */
+.container3, .container4 {
+    width: 100%;
+}
+
+.container1, .container2, .container3, .container4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
 }
