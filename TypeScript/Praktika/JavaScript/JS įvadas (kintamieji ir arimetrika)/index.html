@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- <link rel="stylesheet" href="styles.css"> -->
+	<title>Js įvadas</title>
+    <script src="./kintamieji.js" defer></script>
+    <script>
+        console.log("Labas rytas :)");
+    </script>
+</head>
+<body>
+<header></header>
+<main>
+    <!--Basics-->
+    <section>
+        <h2>JS pagrindai</h2>
+        <ol>
+            <li>Variables - kintamieji</li>
+            <li>Conditions - sąlygos</li>
+            <li>Loops/Cycles - ciklai</li>
+            <li>Functions - funkcijos</li>
+        </ol>
+    </section>
+    <!--Duomenų tipai-->
+    <section>
+        <h2>Duomenų tipai</h2>
+        <ul>
+            <li>Number - skaičius - (neprivaloma to žinoti: int(integer) - sveikasis; float - realusis)</li>
+            <li>String - tekstas - (neprivaloma to žinoti: char(character) - vienas simbolis)</li>
+            <li>Boolean - loginis(true|false)</li>
+            <li>Array - masyvas - konteinerinis</li>
+            <li>Object - objektas - konteinerinis</li>
+            <li>NaN null undefined symbol...(mažai naudotini tai nesimokysim)</li>
+        </ul>
+    </section>
+    <!--Komentavimas-->
+    <section>
+        <h2>Komentavimas</h2>
+        <ul>
+            <li>// - vienos eilutės komentavimas nuo simbolių pradžios</li>
+            <li>/* tarpas */ - daugiau eilučių komentavimas simbolių tarpe</li>
+        </ul>
+        <p>
+            Komentuoti galima paspaudus CTRL + /
+        </p>
+        <p>
+            kodą reikėtų komentuoti. kad kodas būtų suprantamas jums po kurio laiko arba kitam programuotojui - reikia pakomentuoti funkciją/salygą/ciklą/klasę... kad nereikėtų pačiam nagrinėtis/aiškintis ką jinai daro, o paskaičius trumpą komentarą - būtų aišku.
+        </p>
+    </section>
+    <!--JS rašymo būdai-->
+    <section>
+        <h2>JS rašymo būdai</h2>
+        <ul>
+            <li>Internal - JS rašymas HTML failo viduje, script tago viduje</li>
+            <li>Externnal - JS rašymas atskirame JS faile, kuris yra prijungtads prie htmlo</li>
+        </ul>
+        <p>
+            Pagrinde naudojamas external rašymo būdas, jo prijungimas rašomas head tago viduje. Kadangi HTML failas yra skaitomas paeiliui nuo viršaus į apačią gaunasi, kad JS perskaitomas prieš HTMLą, O būna, kad JS kreipiasi į HTML bodį esančią info kuri dar nėra perskaityta ir tokiu atveju gauname kalidą dėl eiliškumo. Tam kad išvengti topkių atvejų JS prijungime rašomas "defer" atributas, kuris nukelia to failo skaitymą į pabaigą. 
+        </p>
+    </section>
+    <!--Informacijos atvaizdavymas naršyklėje-->
+    <section id="staiSitas">
+        <h2>Informacijos atvaizdavymas naršyklėje</h2>
+        <ul>
+            <li>console.log("pranešimas"); - išvedimas į knsole</li>
+            <li>console.dir(HTML_Element(nodeElement)); - išsamus išvedimas į knsole</li>
+            <li>console.group("pavadinimas"); - sukuria atvirą konsolės grupę nurodytu pavadinimu</li>
+            <li>console.groupCollapsed("pavadinimas"); - sukuria suskleistą konsolės grupę nurodytu pavadinimu</li>
+            <li>console.groupEnd(); - nurodo konsolės grupės pabaigą</li>
+            <li>window.alert("pranešimas"); - perspėjimo lentelės atvaizdavimas ekrane</li>
+            <li>window.prompt("užklausa"); - puslapyje atvaizduojams pranešimas su vieta atsakymui, kuris yra grąžinamas į kodą teksto pavidalu</li>
+            <li>Ateityje: innerHTML / textContent / innerText / append / prepend / appendChild...</li>
+        </ul>
+    </section>
+    <!--Kintamieji-->
+    <section>
+        <h2>Kintamieji</h2>
+        <p>
+            Susigalvotas vardas, kurio viduje yra talpinama kokia nors informacija. Kreipiantis į tą vardą (kintajį) yra išsaugoma jo viduje esanti informacija, kurią po to kažkur galima panaudoti.
+        </p>
+        <h3>Kintamajo kūrimas</h3>
+        <ol>
+            <li>kintamojo startas
+                <ul>
+                    <li>var - senasis būdas (hoist'ingo pliusas)</li>
+                    <li>let - naujasis būdas gali kisti</li>
+                    <li>const - naujasis būdas negali kisti</li>
+                    <li> - (nieko nerašant) !!nenaudoti!!</li>
+                </ul>
+            </li>
+            <li>kintamojoVardas - susigalvoji logišką, ne per ilgą kintamojo vardą be tarpų ar lietuviškų simbolių</li>
+            <li>= - lygybės/priskyrimo simbolius</li>
+            <li>reikšmė 
+                <ul>
+                    <li>Number - 6|-5|5.1|0|654321|21-4|...</li>
+                    <li>String - "dvigubose"|'viengubose'|"du žodžiai"|'backtick'|...</li>
+                    <li>Boolean - true|false</li>
+                    <li>...</li>
+                </ul>
+            </li>
+            <li>; - loginės eilutės pabaiga</li>
+        </ol>
+    </section>
+    <!--Arimetrika-->
+    <section>
+        <h2>Arimetrika</h2>
+        <p>
+            Atliekami kažkokie veiksmai tarp kinatmųjų.<br>
+            Galima atlikti veiksmus tarp skirtingo tipo kintamųjų. 
+        </p>
+        <ul>
+            <li>x + y - sudėtis</li>
+            <li>x - y - atimtis</li>
+            <li>x * y - daugyba</li>
+            <li> x / y - dalyba</li>
+            <li>x % y - liekana</li>
+            <li>x ** y - laipsnio kėlimas</li>
+            <li>x ** (1/y) - šaknies traukimas</li>
+        </ul>
+        <p>
+            Visi arimetriniai veiksmai APART sudėties gali būti atliekami tik su skaičiais (su keliomis išimtimis)
+        </p>
+        <ul>
+            <li>String +string = string</li>
+            <li>string + number = string</li>
+            <li>boolean + string = string</li>
+            <li>boolean + number = number</li>
+            <li>boolean + boolean = number</li>
+        </ul>
+    </section>
+</main>
+<footer></footer>
+</body>
+</html>
