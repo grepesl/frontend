@@ -1,0 +1,29 @@
+:root {
+    /* Kintamųjų kūrimas */
+    --kintamojoVardas: 10px;
+}
+
+.twoColumns {
+    display: flex;
+    gap: 10px;
+    justify-content: space-around;
+}
+
+.twoColumns {
+    display: flex;
+    gap: var(--kintamojoVardas);
+    justify-content: space-around;
+
+    >div {
+
+        >h3 {
+            text-align: center;
+        }
+        >ul {
+
+            >li {
+            list-style-type: square;
+            }
+        }
+    }
+}
