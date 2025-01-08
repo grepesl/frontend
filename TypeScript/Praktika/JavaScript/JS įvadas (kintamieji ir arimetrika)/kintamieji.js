@@ -62,3 +62,30 @@ console.log(`'Hello World! + " alio"`, text + " alio"); //Hello world! alio
 console.log ('5 - Hello word!' , number0-text)
 console.groupEnd();
 
+let admin, name;
+name = "Jonas";
+alert(admin);
+
+let PlanetName = "Earth";
+
+let currentUserName = "Greta";
+
+const a = 10;
+const b = 12;
+const sum = a + b;
+
+let year = 2023;
+year -= 18
+
+const name1 = "Greta";
+const lastname = " Gretauskas";
+const fullname = name + lastname;
+
+const celsijus = 15
+celsijus_farenheitai = (celsijus * 9/5) + 32
+
+const initialBalance = 999.99;
+const increasedBalance = initialBalance + (0.09 * initialBalance);
+var doubledBalance = increasedBalance * 2;
+const finalBalance = doubledBalance - 50;
+
