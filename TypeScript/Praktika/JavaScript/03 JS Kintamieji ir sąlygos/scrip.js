@@ -74,6 +74,7 @@ console.groupCollapsed('Masyvų ir Objektų nestinimas');
     console.log(objektoVidujeObjektas.vardas); //"Rokas"
     console.log(objektoVidujeObjektas.gyvenamojiVieta.salis); //"Lietuva"
 
+//OBJEKTAS VIDUJE MASYVO
     let objektasVidujeMasyvo = {
         vardas: "Rokas",
         pavarde: "Banaitis",
@@ -85,6 +86,7 @@ console.groupCollapsed('Masyvų ir Objektų nestinimas');
     console.log(objektasVidujeMasyvo.pomegiai); //['sportas','zaidimai','laukas','keliones']
     console.log(objektasVidujeMasyvo.pomegiai[0]); //'sportas'
 
+    //MAASYVO VIDUJE MASYVAI
     let masyvoVidujeMasyvai = [
         [1, 2, 3],
         [4, 5, 6],
