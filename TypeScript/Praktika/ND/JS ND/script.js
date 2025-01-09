@@ -48,15 +48,15 @@
 // }
 
 // 7.
-let age = 23;
+// let age = 23;
 
-if (age > 100 || age < 0) {
-    console.log('Invalid age');
-} else if (age >= 1 && 18 >= age) {
-    console.log('Child');
-} else if (age >= 19 && age <= 99) {
-    console.log('Adult');
-}
+// if (age > 100 || age < 0) {
+//     console.log('Invalid age');
+// } else if (age >= 1 && 18 >= age) {
+//     console.log('Child');
+// } else if (age >= 19 && age <= 99) {
+//     console.log('Adult');
+// }
 
 //8.
 // let car = 'Audi';

@@ -134,8 +134,8 @@
 //SĄLYGOS
 
 //1
-// let license = true;
-// if (license) {
+// let hasLicense = true;
+// if (hasLicense) {
 //     console.log("Galite vairuoti.");
 // } else {
 //     console.log("Negalite vairuoti.");
