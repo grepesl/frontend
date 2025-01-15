@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./script.js" defer></script>
+</head>
+<body>
+    <main>
+        <!--, Boolean, number, math, string-->
+        <!--Metodai-->
+        <section>
+            <h2>Metodai</h2>
+            <p>
+                Metodas - jau sukurta FUNKCIJA, kuri priklauso ka=kokiam specifiniam kintamojo tipui arba kintamajam/elementui<br>
+                Savybė/property - jau sukurta ir priskirta bei netinkanti REIKŠMĖ priklausanti kažkokiam specifiniam kintamąjam/elementui.
+            </p>
+            <p>
+                Metodai skirti tam, kad pagreitintų/palengvintų programuotojo darbą.
+            </p>
+            <p>
+                Metodai gali būti prototipiniai (instance) arba statiniai(static).<br>
+                Prototipiniu atveju kreipiamasi į metodą ar savybę per kintamąjį.<br> Statiniu atveju kreipiamasi į metodą ar savybę per tipą / klasę.
+            </p>
+            <p>
+                Tipas.prototype.metodas/savybe - kintamasis.metodas()/savybe<br>
+                Tipas.metodas/savybe - tipas.metodas()/savybe
+            </p>
+        </section>
+        <!--Boolean-->
+        <section>
+            <h2>Boolean</h2>
+            <ul>
+                <li>prototype.toString() - paverčia į stringą</li>
+                <li>prototype.valueOF() - grąžina reikšmę</li>
+            </ul>
+        </section>
+        <!--Number-->
+        <h2>Number</h2>
+        <ul>
+            <li>Statinės savybes</li>
+                <ul>
+                    <li>Number.EPSILON - grąžina epsilon</li>
+                    <li>Number.MAX_SAFE_INTEGER - didžiausias skaičius su kuriuo dar gakima daryti veiksmus</li>
+                    <li>Number.MAX_VALUE</li>
+                    <li>Number.POSITIVE_INFINITY - </li>
+                    <li>Number.MIN_SAFE_INTEGER - mažiausias skaičius su kuriuo dar gakima daryti </li>
+                    <li>Number.MIN_VALUE</li>
+                    <li>Number.NEGATIVE.INFINITY</li>
+                    <li>Number.NaN - grąžina NaN</li>
+                </ul>
+        </ul>
+        <ul>
+            <li>Statiniai metodai
+                <ul>
+                    <li>IsFinite(skaičius) - ar skaičius nėra begalinsi</li>
+                    <li>IsInteger(skaičius) - ar skaičius yra sveikasis</li>
+                    <li>isSafeInteger(skaičius) ar skaičius yra tarp MIN ir MAX safe integer</li>
+                    <li>isNan(kazkas) - ar tas kažkas yra NaN</li>
+                    <li>perseInt(kazkas) - paverčia kažkas į sveikąjį skaičių</li>
+                    <li>perseFloat(kazkas) - paverčia kažkas į realųjį skaičių</li>
+                </ul>
+            </li>
+            <li>Instance (prototipiniai) metodai
+                <ul>
+                    <li>toPrecision(skiacius) - grąžina kintamąjį kaip tekstą su nurodytų kiekiu </li>
+                    <li>toFixed(skaicius) - grąžina kintamąjį kaip tekstą su nurodytų kiekiu skaicius po kablelio</li>
+                </ul>
+            </li>
+        </ul>
+        <!--Math-->
+        <section>
+            <h2>Math</h2>
+            <ul>
+                <li>Statinės savybės
+                    <ul>
+                        <li>Math.PI - grąžina PI (3.14...)</li>
+                        <li>...</li>
+                    </ul>
+                </li>
+                <li>Statiniai metodai
+                    <ul>
+                        <li>cbrt(skaicius) - grąžina skaicius kūbinę šaknį</li>
+                        <li>sqet(skaicius) - grąžina skaicius kvadratinę šaknį</li>
+                        <li>pow(skaicius, laipsnis) - grąžina skaičių pakelta lapsniu</li>
+                        <li>floor(skaicius) - grąžina skaičių apvalintą į žemesnį</li>
+                        <li>ceil(skaicius) - grąžina skaičių apavalintą į akštesnį</li>
+                        <li>round(skaicius) - grąžina skaičių apvalintą pagal apavalinimo taisyklesn (0,5)</li>
+                        <li>hypot(sk1,sk2,sk3...) - grąžina skaičių kvadratų sumų šaknį</li>
+                        <li>min(sk1,sk2,sk3..) - grąžina mažiausią skaičių iš išvardintų</li>
+                        <li>max(sk1,sk2,sk3..) - grąžina didžiausią skaičių iš išvardintų</li>
+                        <li>random() - grąžina random skaičių nuo 0 iki 1</li>
+                        <li>sign(skaicius) - tikrina ar skaičius teigiamas(1), ar neigiamas(-1), ar nulis(0)</li>
+                        <li>trunc(skaicius) - grąžina skaičių kaip sveikąjį (panaikina viską už kablelio)</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+        <!--String-->
+        <section>
+            <h2>String</h2>
+            <ul>
+                <li>Instance savybės
+                    <ul>
+                        <li>length - grąžina teksto ilgį</li>
+                    </ul>
+                </li>
+                <li>Instance metodai
+                    <ul>
+                        <li>at(skaičius) - grąžina teksto skaičius pozicijoje esantį simbolį (galima skaičiuoti nuo galo rašant skaičių neigiamą)</li>
+                        <li>charAt(skaicius) - grąžina teksto skaičius pozicijoje esantį simbolį</li>
+                        <li>charCodeAt(skaicius) - grąžina teksto skaičius pozicijoje esančio simbolio UTF-16 bibliotekoje esantį simbolį</li>
+                        <li>concat(str1,str2,str3...) - grąžina visus stringus apjungtus į vieną</li>
+                        <li>startsWith(string) - ar prasideda tekstas nurodytu stringu </li>
+                        <li>endsWith(string) - ar pasibaigia tekstas nurodytu stringu</li>
+                        <li>includes(string) - ar tekste yra nurodytas stringas</li>
+                        <li>indexOF(string) - grąžina poziciją stringo esančio tekste</li>
+                        <li>lastIndexOF(string) - grąžina poziciją stringo esančio teksto (ieškant nuo galo)</li>
+                        <li>localeCompare(string) - palygina tekstą su stringu</li>
+                        <li>match(regex) - </li>
+                        <li>matchAll(regex) - </li>
+                        <li>padStart(ilgisi, stringas) - prideda string į teksto pradžią kol pasiekiamas nurodytas ilgis</li>
+                        <li>padEnds(ilgis, string) - prideda string į teksto pabaigą kol pasiekiamas nurodytas ilgis</li>
+                        <li>repeat(kiek) - grąžina tekstą pakartotą nurodytą kiekį kartų</li>
+                        <li>replace('ką','kuom') - grąžina tekstą kuriame pirmasis rastas 'ką' yra pakeistas į 'kuom'</li>
+                        <li>replaceAll('ką','kuom') - grąžina tekstą kuriame visi rasti 'ką' yra pakeisti į 'kuom'</li>
+                        <li>search(regex) - </li>
+                        <li>slice(nuo, iki) - atkerpa ir grąžina iš nurodyto teksto dalį teksto esančio nuo(imtinai) iki iki(neimtinai)</li>
+                        <li>substring(nuo, iki) - atkerpa ir grąžina iš nurodyto teksto dalį teksto esančio nuo(imtinai) iki iki(neimtinai)</li>
+                        <li>split(skirtukas) - tekstą sukarpo į gabaliukus pagal skirtuką ir sudeda tuos gabaliukus į masyvą</li>
+                        <li>toLowerCase() - paverčia viską į tekstą į mažąsias raides</li>
+                        <li>toUpperCase - paverčia viską į tekstą į didžąsias raides</li>
+                        <li>trimStart() - panaikina tarpus teksto pabaigoje</li>
+                        <li>trimEnd() - panaikina tarpus teksto pabaigoje</li>
+                        <li>trim() - panaikina tarpus teksto pradžioje ir pabaigoje</li>
+                        <li>...</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+    </main>
+</body>
+</html>

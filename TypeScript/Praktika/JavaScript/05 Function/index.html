@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function</title>
+    <script src="./script.js" defer></script>
+</head>
+<body>
+    <section>
+        <h2>Funkcija</h2>
+        <p>
+            Funkcija yra užvadintas kodas, kuris nėra vykdomas kol į jį bėra kreipiamasi. Galima kreiptis daugiau nei veiną kartą.
+        </p>
+        <p>
+            Funkcija GALI priimti duomenis. Tuos duomenis naudoja savo viduje atliekant veiksmus.
+        </p>
+        <p>
+            Funkcija gali atlikti kazkoki veiksma ir/arba grąžinti kažkokius duomenis.
+        </p>
+        <p>
+            <b>Parametras</b> - funkcijos kūrimo metu aprašytas kintamasisfunkcijos pradiniose sklaisutuose, kurio reikšmė priklauso nuo to, kas bus paduota lreipimosi į funkciją metu kaip argumentas.<br>
+            <b>Argumentas</b> - reikšmė kuri yra paduodama į funkciją kreipimosi metu.
+        </p>
+        <h3>Syntax</h3>
+        <p>
+            function susigalvotasPavadinimas(){... veiksmas ...}<br>
+            function susigalvotasPavadinimas2(parametras1, par2, par3...){... veiksmai ...}
+        </p>
+        <h3>Call</h3>
+        <p>
+            susigalvotasPavadinimas();
+            susigalvotasPavadinimas2(argumentas, arg2, arg3, ...);
+        </p>
+    </section>
+    <!--DOM-->
+    <section>
+        <h2>DOM</h2>
+        <p>
+            DOM - document Pbject model. Kaip HTMLą mato JS'as.
+        </p>
+        <p>
+            Visas HTML dokuimentas yra tarsi didelis objektas, kurio viduje yra 5vair8s raktioniai žodžiai ir juos gali būti masyvai kitų HTML elemntų.<br> pvz.: const html={children: [head={}, body={children: [header={}, main={...}, footer={}]}]}
+        </p>
+    </section>
+    <!--Event-->
+    <section>
+        <h2>Event</h2>
+        <p>
+            Kreipimasis į dokumento elemntą ir uždėjimas jam įvykio klausimąsį. Tame elemente įvykus tam įvikiui, bus atliekami kažkokie veiksmai.
+        </p>
+        <ol>
+            <li>const elementas = document.querySelector('CSS_SELECTOR');</li>
+            <li>elementas.addEventListener('įvykis', functionCall);</li>
+            <li>function functionName(){... veiksmai ...};</li>
+        </ol>
+    </section>
+    <!--DOM ir Event test-->
+    <section id="test">
+        <h2>DOM ir Event test</h2>
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quae maxime rem fugit enim libero aperiam voluptas id cum recusandae, optio doloribus incidunt consectetur beatae? Voluptas, eius. Reiciendis, sunt nesciunt.
+        </p>
+        <button>Do not click me!</button>
+    </section>
+</body>
+</html>
