@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./script.js" defer></script>
+</head>
+<body>
+    <main>
+        <!--Masyvų interaciniai metodai-->
+        <h2>Masyvų interaciniai metodai</h2>
+        <p>
+            Masyvų interaciniai metodai yra tokie metodai, kurie suka ciklą per masyvą, ima kiekvieną jo elementą (kurį galima užsivadinti kaip nori) ir su juo kiekvienos interacijos metu atlieka kažkokius veiksmus /sąlygas / kažką grąžina.
+        </p>
+        <!--Metodai-->
+        <div>
+            <div> <!--ForEach-->
+                <p>
+                    Syntax:<br>
+                    1) masyvas.forEach((element) => {})
+                    2) masyvas.forEach((element, interacija) => {... veiksmai ...})
+                    3) masyvas.forEach((element, interacioja, masyvas) => {... veiksmai ...})
+                </p>
+                <p>
+                    ForEach metodas - suka ciklą per visą masyvą ir kiekvienos interacijos metu TIKTAI atlieka kažkokius veiksmus.<br>
+                    ForEach negali grąžinti kažkokios reikšmės, neturi return.<br>
+                    ForEach negali būti sustabdytas, neturi break.
+                </p>
+            </div>
+            <div> <!--Filter-->
+                <h3>Filter</h3>
+                <p>
+                    Syntax:<br>
+                    1) masyvas.filter((element) => {... veiksmai sąlyga su grąžinimu...})
+                    2) masyvas.filter((element, interacija) => {... veiksmai sąlyga su grąžinimu...})
+                    3) masyvas.filter((element, interacioja, masyvas) => {... veiksmai sąlyga su grąžinimu...})
+                </p>
+                <p>
+                    Filter metodas - suka ciklą per visą masyvą ir kiekvienos interacijos metu gali atlikti kažkokius veiksmus ir tuomet interacijos elementą praleistii pro filtrą jeigu sąlyga yra tenkinama arba ne<br>
+                    Kitaip pasakius - išfiltruoja masyvą ir grąžina naują masyvą su išfiltruotomis reikšmėmis.
+                </p>
+            </div>
+            <div><!--Map-->
+                <h3>Map</h3>
+                <p>
+                    Syntax:<br>
+                    1) masyvas.map((element) => {... veiksmai | sąlyga | grąžinimas naujo pavidalo...})
+                    2) masyvas.map((element, interacija) => {... veiksmai | sąlyga | grąžinimas naujo pavidalo...})
+                    3) masyvas.map((element, interacioja, masyvas) => {... veiksmai | sąlyga | grąžinimas naujo pavidalo...})
+                </p>
+                <p>
+                    Map metodas - suka ciklą per visą masyvą ir kiekvienos interacijos metu gali atlikti ka=kokius veiksmus gali pagal kažkokią sąlygą gražinti arba gražinti kažkaip mutuotą/pakeistą/redaguotą elementą<br>
+                    Kitaip pasakius - gaunamas vienoks masyvas, gražinamas kitoks masyvas.
+                </p>
+            </div>
+            <div> <!--Reduce-->
+                <h3>Reduce</h3>
+                <p>
+                    Syntax:<br>
+                    1) masyvas.reduce((accumulator, currentElement) => {... veiksmai gražinimas})
+                    2) masyvas.reduce((accumulator, currentElement, interacija) => {... veiksmai gražinimas})
+                    3) masyvas.reduce((accumulator, currentElement, interacioja, masyvas) => {... veiksmai gražinimas...})
+                    4) masyvas.reduce((accumulator, currentElement) => {... veiksmai gražinimas...}, initialValue)
+                    5) masyvas.reduce((accumulator, currentElement, interacija) => {... veiksmai gražinimas...}, initialValue)
+                    6) masyvas.reduce((accumulator, currentElement, interacioja, masyvas) => {... veiksmai gražinimas...}, initialValue)
+                </p>
+                <p>
+                    Reduce metodas - suka ciklą per visą masyvą ir kiekvien interacijos metu keičia accumulatorių naudodamas currentElement ir grąžina pakeistą accumulatorių kitai interacijai. Viso metodo galia yra grąžinama viena reikšmė - accumulator.<br>
+                    Jeigu nėra nurodytas initialValue - pirmosios iteracijos metu, accumulator yra 0'tasis elementas, o currentElement yra 1'asis elementas.<br>
+                    O jeigu yra nurodytas initialValue - pirmosios iteracijos metu, accumulator yra initialValue, o currentElement yra 0'tasis
+                </p>
+            </div>
+            <div><!--ReduceRight-->
+                <p>
+                    Tas pats kas reduce tik iš kito galo
+                </p>
+            </div>
+            <div><!--FlatMap-->
+                <!-- ['a',['a1', 'a2'['aa1', 'aa2']], 'b', 'c']
+                flat(1)
+                ['a','a1', 'a2'['aa1', 'aa2'], 'b', 'c'] -->
+                <p>
+                    Junginys flat(1) ir map() metodų.
+                </p>
+            </div>
+            <div><!--Some ir Every-->
+                <p>
+                    Syntax:<br>
+                    1) masyvas.some|every((element) => {... veiksmai  sąlyga  grąžinimas...})
+                    2) masyvas.some|every((element, interacija) => {... veiksmai  sąlyga  grąžinimas...})
+                    3) masyvas.some|every((element, interacioja, masyvas) => {... veiksmai sąlyga grąžinimas...})
+                </p>
+                <p>
+                    some metodas - suka ciklą per visą masyvą ir kiekvienos iteracijos metu tikrina ar elementas atitinka kažkokią sąlygą. jeigu bent vienas elementaas atitinka kažkokią sąlygą, tuomet yra stabdomaas ciklas ir gržinama tiesa.
+                </p>
+                <p>
+                    every metodas - suka ciklą per visą masyvą ir kiekvienos iteracijos metu tikrina ar elementas atitinka kažkokią sąlygą. jeigu bent vienas elementaas NEatitinka kažkokią sąlygą, tuomet yra stabdomaas ciklas ir gržinama false.
+                </p>
+            </div>
+            <div><!--Find, FindIndex, FindLast, FindLastIndex-->
+                <p>
+                    Syntax:<br>
+                    1) masyvas.find((element) => {... veiksmai  sąlyga  grąžinimas...})
+                    2) masyvas.find((element, interacija) => {... veiksmai  sąlyga  grąžinimas...})
+                    3) masyvas.find((element, interacioja, masyvas) => {... veiksmai sąlyga grąžinimas...})
+                </p>
+                <p>
+                    Find - grąžina pirmąjį rastą elementą, kuris atitinka kažkokią sąlygą
+                </p>
+                <p>
+                    FindIndex - grąžiną pirmojo rasto elemento indeksą, kuris taitinka kažkokią sąlygą
+                </p>
+                <p>
+                    FindLast - tas pats kas Find, tik iš kito galo
+                </p>
+                <p>
+                    findLastIndex - tas pats kas FindIndex, tik iš kito galo
+                </p>
+            </div>
+        </div>
+        <!--Destructuring-->
+        <section>
+            <p>
+                Destruktūrizavimas - kažko (parametrai, objektai, masyvai, ?...) išskaidymas į atskiras dalis ir priskyrimas
+            </p>
+            <div> <!--Masyvų destruktūrizavimas-->
+                <ul>
+                    <li>Išrašant kintamuosius eilės tvaka, jiems priskiriamos reikšmės iš masyvo eilės tvarka</li>
+                    <li>Galima priskiriant suteikti default/numatysasias rerikšmes. Jeigu destruktūrizuojamo masyvo reikšmė yra undefind - priskiriama nurodyta default reikšmė</li>
+                    <li>Galima praleisti reikšmę, įrašant kablelį/nerašant naujo pavadinimo</li>
+                    <li>Galima surinkti visas likusias reikšmes į vieną parašant daugtaškį (...) ir pavadinimą. Spread operatorius</li>
+                </ul>
+            </div>
+            <div> <!--Objektų destruktūrizavimas-->
+                <ul>
+                    <li>Kreipiamės į raktinius žodžius tais pačiais pavadinimais.</li>
+                    <li>Galima keisti raktinio žodžio pavadinimą rašant originalųjį raktinį žodžį -> dvitaškis (:) -> naujas žodis</li>
+                    <li>Galima priskirti default reikšmes, jeigu destruktūrizuojamo objekto reikšmė būtų undefind arba net nebūtų tokio raktinio žodžio</li>
+                    <li>galima iš objekto viduje esančio objekto išgauti reikšmes raktT:{raktV}<!--T -tėvinio, V -vaikinio--></li>
+                    <li>galima iš objekto viduje esančio masyvo išgauti reikšmes raktT:{skaicius:pav}</li>
+                    <li>Galima išgauti visas likusias naudojant daugtaškį (...) spread operatorius.</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./script.js" defer></script>
+</head>
+<body>
+    <main>
+        <!--Objektų metodai-->
+        <section>
+            <h2>Object</h2>
+            <ul>
+                <li>Statiniai metodai
+                    <ul>
+                        <li>entries(objektas) - grąžina masyvus masyve su raktais ir reikšmėmis</li>
+                        <li>keys(objektas) - grąžina masyvą su raktiniais žodžiais </li>
+                        <li>...</li>
+                    </ul>
+                </li>
+                <li>Instance (prototype) matodai
+                    <ul>
+                        <li>hasOwnProperty('raktinisZodis') - tikrina ar objekte yra nurodytas raktinis žodis</li>
+                        <li>ClassName.isPrototypeOf(objektas) - tikrina ar objektas yra sukurtas iš ClassName klasės</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+        <!--MAsyvų objektai-->
+        <section>
+            <h2>Array</h2>
+            <ul>
+                <li>Statiniai metodai
+                    <ul>
+                        <li>Array.isArray(something) - ar something yra masyvas</li>
+                        <li>from(value) - paverčia value į masyvą</li>
+                        <li>fromAsync(value) - paverčia value į masyvą (tinkamas su async)</li>
+                        <li>of(value1, value2, value3...) - grąžina masyvą susidedanti iš value1, value2, value3...</li>
+                    </ul>
+                </li>
+                <li>Instance (prototype) savybės
+                    <ul>
+                        <li>length - grąžina masyvo ilgį</li>
+                    </ul>
+                </li>
+                <li>Insatnce (prototype) metodai
+                    <ul>
+                        <li>at(index) - grąžina reikšmę esančią nurodytame indekse</li>
+                        <li>concat(arr1, arr2, arr3...) - grąžina naują masyvą, kuris yra junginys visų masyvų</li>
+                        <li>fill(value, start, end) - užpildo masyvą reikšmės(value), nuo nurodytos pozicijos(start) iki nurodytos pozicijos(end). MODIFIKUOJA originalųjį masyvą, grąžina modifikuota</li>
+                        <li>includes(value) - tikrina ar masayve yra nurodyta reikšmė (value). grąžina true|false</li>
+                        <li>indexOF(value, from) - grąžina pirmosios rastos reikšmės(value) indeksą, ieškotos nuo nurodytos(from) pozicijos jeigu randa, jeigu neranda - grąžina -1</li>
+                        <li>lastIndexOF(value, from) - grąžina pirmosios rastos reikšmės(value) indeksą, ieškotos iš kito galo nuo nurodytos(from) pozicijos jeigu randa, jeigu neranda - grąžina -1</li>
+                        <li>join(separator) - grąžina naują masyvą apjungtą į stringą su separator tar kiekvieno elemento</li>
+                        <li>pop() - </li>
+                        <li>push(value) - </li>
+                        <li>shift() - </li>
+                        <li>unshift() - </li>
+                        <li>reverse() - apsuka masyvą iš kito galo. MODIFIKUOJA originalųjį masyvą. grąžina modifikuota</li>
+                        <li>toReversed() - apsuka masyvą iš kito galo. NEMODIFIKUOJA originalaus masyvo. grąžina naują apsuktą masyvą</li>
+                        <li>slice(from, to) - nukopijuoja masyvo elementus į anują masyvą (kurį grąžins) nuo nurodytos(from) pozicijos iki nurodytos(to) pozicijos</li>
+                        <li>sort(compareFn) - rikiuoja masyvą ir MODIFIKUOJA originalųjį ir grąžina modifikuota</li>
+                        <li>toSorted(compareFn) - rikiuoja masyvą (pagal compareFn nurodymus) ir NEmodifikuoja originalaus masyvo ir grąžina naują surikiuotą</li>
+                        <li>splice(start, deletionCount, value1, value2, value3...) - nuo start indekso trina nurodytą kiekį(deletionCount) elementų ir į tą vietą įterpia  toliau nurodytas reikšmes (value1, value2, value3). MODIFIKUOJĄ originalųjį masyvą. grąžinamasyvą su ištrintomis reikšmėmis.</li>
+                        <li>toSpliced (start, deletionCount, value1, value2, value3...)- nuo start indekso trina nurodytą kiekį(deletionCount) elementų ir į tą vietą įterpia  toliau nurodytas reikšmes (value1, value2, value3). NEmodifikuoja originalaus masyvo. grąžina naują mayvą kuriame nėra ištrintų, bet yra įterptos reikšmės.</li>
+                        <li>width(index, value) - grąžina naują masyvą, kuriame nurodytame indekse esanti reikšmė yra pakeistą į nurodytą reikšmę(value). NEmodifikuoja originalaus masyvo</li>
+                        <li>iteraciniai...</li>
+                        <li>...</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+        <!--Masyvų iteraciniai metodai-->
+        <section>
+            <h2>Masyvų iteraciniai metodai</h2>
+            <ul>
+                <li>forEach() - skirtas prasukti ciklą pro masyvą. Nieko specialaus neatlieka. Nieko negrąžina</li>
+                <li>filter() - skirtas išfiltruoti iš masyvo kažkokias reikšmes, kurios atitinka sąlygą ir jas grąžinti naujame masyve</li>
+                <li>map() - skirtas kažkai modifikuoti kiekvieną masyvo reikšmę ir grąžinti naują masyvą su tomis modifikuotomis reikšmėmis (originalausNEmodifikuoja) </li>
+                <li>reduce()</li>
+                <li>reduceRight() - tas pats kas reduce tik iš kito galo</li>
+                <li>flatMap()</li>
+                <li>some() - tikrinas ar masyve yr abent viena reikšmė atitinkanti kažkokią sąlygą. grąžina boolean</li> 
+                <li>every() - tikrina ar masyve visos reikšmės atitinka kažkokią sąlygą. grąžina boolean</li>
+                <li>find() - grąžina pirmą rastą elementą kuris taitinka kažkokią sąlygą</li>
+                <li>findIndex()</li>
+                <li>findLast()</li>
+                <li>findLastIndex()</li>
+            </ul>
+        </section>
+    </main>
+</body>
+</html>
