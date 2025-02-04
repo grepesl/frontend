@@ -1,0 +1,47 @@
+{
+    "vartotojai": [
+        {
+            "id": "46432",
+            "userName":"Rokas",
+            "email": "rokas@gmail.com",
+            "age": 28,
+            "isAdmin": false
+        },
+        {
+            "id": "462236",
+            "userName":"Petras",
+            "email": "petras@gmail.com",
+            "age": 30,
+            "isAdmin": true
+        },
+        {
+            "id": "46542",
+            "userName":"Jonas",
+            "email": "jonas@gmail.com",
+            "age": 15,
+            "isAdmin": false
+        }
+    ],
+    "straipsniai":[
+        {
+            "id": "4569",
+            "title": "mano diena",
+            "description": "Buvo labai silta",
+            "userID": "46432"
+        },
+        {
+            
+            "id": "4569",
+            "title": "mano dien super",
+            "description": "Buvo labai silta ok",
+            "userID": "462236"
+        },
+        {
+            
+            "id": "4569",
+            "title": "mano diena ok",
+            "description": "Buvo labai silta hghggh",
+            "userID": "46542"
+        }
+    ]
+}

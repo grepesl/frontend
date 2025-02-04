@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="./main.js" type="module"></script>
+</head>
+<body>
+    <!--JSON server-->
+    <section>
+        <h2>JSON Server</h2>
+        <p>
+            JSON server yra vienas iš NPM (Node Pacage Manager), kurio pagalba galime susikurti lokalų API serverį iš savo JSON failo. Šiame serveryje galėsime turėti savo susikurtus duomenis, kurie privalo būti JSON faile, JSON specifiniu formatu. Paleidus JSON serverį naudojant JSON failą su duomeninmis, galėsime į jį (JSON server) kreiptis su Fetch užklausomis ir nusiūsti/gauti/redaguot/trinti jame esančius duomenis. 
+        </p>
+        <h4>Tam, kad galėtume naudotis JSON serveriu reikia:</h4>
+        <ol>
+            <li>npm(jis įsirašo kartu su Node'u)</li>
+            <li>Įsirašyti json-server globaliai (npm i json-server -g)</li>
+            <li>Susikurti JSON failą su specifiniu duomenų formatu</li>
+            <li>Pasileisti JSON failą su json-server komanda (json-server data.json)</li>
+        </ol>
+    </section>
+    <!--terminal/commandLine-->
+    <section>
+        <h2>Terminal</h2>
+        <h3>Terminal Commands</h3>
+        <ul>
+            <li>cd - change directory - skirta naviguoti tarp aplankalų</li>
+            <li>ls - list - išvardina failus/aplankalus esančius dabartinėje direktorijoje(linux/mac)</li>
+            <li>dir - directories - švardina failus/aplankalus esančius dabartinėje direktorijoje(windows)</li>
+            <li>clear - išvalo k0omandinės eilutės vaizdą (not really)</li>
+            <li>extra stuff
+                <ul>
+                    <li>TAB - užbaigia eilute arba pasiūlo galimus užbaigimus</li>
+                    <li>CTRL C - atšaukia dabartinę koamdą/veiksmą/eilutę...</li>
+                    <li>ARROW UP/DOWN - vaikšto per komandines eilutes istoriją</li>
+                </ul>
+            </li>
+        </ul>
+        <h3>Terminal Navigation</h3>
+        <ul>
+            <li>/ - sistemos/projekto pradžią</li>
+            <li>./ - niekur nenukelia (lieki toje pačioje vietoje)</li>
+            <li>../ - žingsnis atgal per vieną aplankalą</li>
+            <li>-  - grįžti į buvusį aplankalą iš kurio tiką išėjai (tarsi cntr z)</li>
+        </ul>
+        <h3>JSON server Routes</h3>
+        <p>
+            *kiekvienas collection name gauna savo raute'ą
+        </p>
+        <ul>
+            <li>GET collectionName - gauname visus collectionName esančius duomenis</li>
+            <li>GET collectionName/id - gauname vieną specifinį duomenį iš collectionName pagal to duomens ID</li>
+            <li>POST collectionName - papildo collectionName esančius duomenis nauju duomenimi</li>
+            <li>PATCH collectionName/id - redaguoja collectionName esantį duomenį pagal ID</li>
+            <li>PUT collectionName/id - redaguoja collectionName esantį duomenį pagal ID</li>
+            <li>DELETE collectionName/id - trina collectionName santį duomenį pagal ID</li>
+        </ul>
+    </section>
+    <section id="users">
+        <h2>Users</h2>
+
+        <input type="checkbox" id="isVip" name="isVip" />
+        <label for="isVip">Rodyti tik VIP</label><br>
+
+        <label for="site-search">Search the site:</label>
+        <input type="search" id="searchBar" name="site-search" />
+
+        <button id="searchButton">Search</button>
+
+    </section>
+</body>
+</html>

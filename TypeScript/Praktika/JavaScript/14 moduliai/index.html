@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./main.js" type="module"></script>
+<body>
+    <main>
+        <!--Moduliai (modules)-->
+        <section>
+            <h2>Moduliai</h2>
+            <p>
+                Moduliai - skirtingi/atskiri failai su kažkokiu savo kodu. Tas kodas (arba jo dalis) gali būti panaudotas kitų failų.
+            </p>
+            <h3>Svarbūs aspektai</h3>
+            <ul>
+                <li>Moduliuose gali būti įvairus kodas: duomenys (kintamieji), funkcijos, Klasės...</li>
+                <li>Norint pasiimti kažkokią informaciją iš kito failo, reikia ją import'uoti, o ta informacija turi būti export'uota</li>
+                <li>HTML'e prijungtas JS'as kuris kažką import'uoja - PRIVALO turėti atributą type su reikšme module (type="module")</li>
+                <li>HTML faile, prie kurio prijungtas modulis - PRIVALO būti pasileisti kaip serveris, kitu atveju modulis neveiks.</li>
+                <li>Klasės turi būti atskiri failai. Visiems failas - viena Klasė. Tiek Klasės, tiek Failo vardai turi būti vienodi ir iš didžiųjų raidžių</li>
+                <li>...</li>
+            </ul>
+            <h3>Export ir Import</h3>
+            <p>
+                Failuose esantis kodas gali būti iškeliamas (export'uojamas) ir galima kažkokį kodą iš kito failo įsikelti (import'uoti).
+            </p>
+            <h4>Export</h4>
+            <p>
+                Duomenys, funkcjos, Klasės gali būti exportuojamos kaip paprasti dalykai ara kaip pagrindinis failo dalykas.<br>
+                Iš vieno failo galima iškelti vieną pagrindinį (default) dalyką ir neapribotą kiekį papildomų dalykų. 
+            </p>
+            <ul>
+                <li>Toje pačioje eilutėje (negalima arrow funkcijos kaip default)</li>
+                <li>Kodo apačioje išvardinti visus exportus {} ir/arba vieną export default</li>
+            </ul>
+            <h4>Import</h4>
+            <p>
+                iMPORTUOTI GALIMA DEFAULT ARBA PAPRASTUS EXPORTUS. sKIRTUMAS TAS, KAD DEFAULT NEREIKIA SKLIAUSTELIŲ IR NORINT PERVADINTI TIESIOG RAŠAI KITĄ PAVADINIMĄ BO JOKIŲ PAPILDOMŲ ŽODŽIŲ, O NORINT PERVADINTI PAPRASTUS REIKIA NAUOTI ŽODELI "as".
+            </p>
+            <ul>
+                <li>import { something  as diff, somethingElse} from 'somewhere'</li>
+                <li>import defaultExportThingAnyName from 'somewhere'</li>
+                <li>import mainThing { something as diff, somethingElse } from 'somewhere'</li>
+            </ul>
+        </section>
+        <!--Komponentai-->
+        <section>
+            <h2>Komponentai</h2>
+            <p>
+                Komponentas - HTML elementas sukurtas JS'u.
+            </p>
+            <p>
+                Komponentai dažniausiai yra kuriami framework'ų pagalba, tokių kaip: React/Vue/Angular/Swift... Bet juos galima kurti ir JS'e kaip atskiras Klases ar funkcijas.
+            </p>
+        </section>
+        <section>
+
+        </section>
+    </main>
+</body>
+</html>

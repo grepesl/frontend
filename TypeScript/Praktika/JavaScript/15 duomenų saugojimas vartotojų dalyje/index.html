@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./main.js" type="module"></script>
+</head>
+<body>
+    <main>
+        <!--Duomenų saugojimas vartotojo dalyje-->
+        <section>
+            <h2>Duomenų saugojimas vartotojo dalyje</h2>
+            <p>
+                Cookies, SessionStorage ir LocalStorage informacija yra saugojama jūsų įrenginyje/naršyklėje/aplikacijoje<br>
+                Skirtingose svetainėse/naršyklėse/įrenginiuose esantys cookies/localStorage/sessionStorage yra saugomi įvairiai
+            </p>
+            <p>
+                Visi lokaliai saugojami duomenys PRIVALO būti string pavidalu!
+            </p>
+            <div> <!--Cookies-->
+                <h3>Cookies</h3>
+                <p>
+                    Saugojama tik iki 4kb<br>
+                    Reikia nustatyti iki kada tie duomenys saugojami<br>
+                    Siunčiami su request'ais į back-end'ą.
+                </p>
+            </div>
+            <div> <!--SessionStorage-->
+                <h3>SessionStorage</h3>
+                <p>
+                    Kai pasibaigia sesija (kai yra išjungiama svetainė) šitie duomenys yra ištrinami
+                </p>
+                <p>
+                    Dažnai naudojamas saugoti JWT token'ą.
+                </p>
+                <h4>Syntax</h4>
+                <ul>
+                    <li>window.sessionStorage.length - grąžina kiek yra išsaugotų elementų</li>
+                    <li>window.sessionStorage.setItem('raktas', 'reikšmė') - išsaugojama informacija</li>
+                    <li>window.sessionStorage.getItem('raktas') - grąžina reikšmę priklausančią raktui</li>
+                    <li>window.sessionStorage.removeItem('raktas') - ištrina nurodytą rakto reikšmę</li>
+                    <li>window.sessionStorage.clear() - ištrina viską iš sessionStorage</li>
+                    <li>window.sessionStorage.key(index) - grąžinamas raktinis žodis esanti nurodytame indaxe</li>
+                </ul>
+            </div>
+            <div> <!--localStorage-->
+                <h3>localStorage</h3>
+                <p>
+                   Duomenys yra saugojami visam laikui. Juos reikia trinti rankiniu būdu.
+                </p>
+                <h4>Syntax</h4>
+                <ul>
+                    <li>window.localStorage.length - grąžina kiek yra išsaugotų elementų</li>
+                    <li>window.localStorage.setItem('raktas', 'reikšmė') - išsaugojama informacija</li>
+                    <li>window.localStorage.getItem('raktas') - grąžina reikšmę priklausančią raktui</li>
+                    <li>window.localStorage.removeItem('raktas') - ištrina nurodytą rakto reikšmę</li>
+                    <li>window.localStorage.clear() - ištrina viską iš localStorage</li>
+                    <li>window.localStorage.key(index) - grąžinamas raktinis žodis esanti nurodytame indaxe</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

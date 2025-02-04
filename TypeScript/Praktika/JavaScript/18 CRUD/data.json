@@ -1,0 +1,43 @@
+{
+  "collection": [
+    {}
+  ],
+  "restaurants": [
+    {
+      "id": "456",
+      "name": "Gan bei",
+      "kitchen": "Rytietiška",
+      "location": "Vilniaus Akropolis",
+      "priceRange": "Vidutiniškos",
+      "rating": 9,
+      "thumbnail": "https://www.origo.lv/wp-content/uploads/2022/03/15-1080x656.jpg"
+    },
+    {
+      "id": "123",
+      "name": "Paslėpti receptai",
+      "kitchen": "Itališka",
+      "location": "Kaunas, Laisvės al. 57",
+      "priceRange": "Mažos",
+      "rating": "9",
+      "thumbnail": "https://www.akropolis.lt/image/16485525925582_430_430_1.jpg"
+    },
+    {
+      "id": "789",
+      "name": "Ugruzina",
+      "kitchen": "Gruziniška",
+      "location": "Vilnius, Kalvarijų g. 59",
+      "priceRange": "Aukštos",
+      "rating": "8.8",
+      "thumbnail": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2c/d2/1e/d0/caption.jpg?w=900&h=500&s=1"
+    },
+    {
+      "id": "645",
+      "name": "Azerai",
+      "kitchen": "Azerbaidžianietiška",
+      "location": "Vilnius, Jaruzalės g. 21",
+      "priceRange": "Aukštos",
+      "rating": "8,8",
+      "thumbnail": "https://imageproxy.wolt.com/menu/menu-images/6022444e0651a08b883842e1/5f8087e2-7769-11ec-8ba1-06abd6b97446_azerai_5.jpeg?w=600"
+    }
+  ]
+}

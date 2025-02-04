@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>38 paskaita - CRUD</title>
+  <link rel="stylesheet" href="./main.css">
+  <script src="./main.js" type="module"></script>
+</head>
+<body>
+  <header></header>
+  <main>
+    <section> <!-- CRUD -->
+      <h2>CRUD</h2>
+      <p>
+        Create Read Update Delete egzistuoja beveik visuose puslapiuose vienu ar kitu formatu. Labai daug kur vartotojai gali skaityti sugeneruotą informaciją, susikurti paskyras, post'us, siūsti žinutes, jas trinti ar redaguoti.<br>
+        Nebūtinai būna pilnas CRUD'as, kartais gali būti tiktais kelios jo dalys, bet jos visviena būna beveik visur.
+      </p>
+      <ul>
+        <li>Create - sukurti naują: vartotoją/žinutę/post'ą...</li>
+        <li>Read - atsisiūsti ir atvaizduoti kažkokią informaciją</li>
+        <li>Update - redaguoti kažkokią atvaizduotą informaciją vienu ar kitu būdų (galimai atidarant redagavimo lauką kaip modalą)</li>
+        <li>Delete - trinti kažkokį informacijos vienetą (dažnu atveju su patvirtinimu)</li>
+      </ul>
+    </section>
+    <section> <!-- Modalas -->
+      <h2>Modalas</h2>
+    </section>
+    <section> <!-- Restoranai -->
+      <h2>Restoranai</h2>
+      <div>
+        <h3>Pridėti restoraną</h3>
+        <form id="addNewRestaurant">
+          <div>
+            <label for="name">Restorano pavadinimas:</label>
+            <input 
+              type="text"
+              name="name" id="name"
+              required minlength="3" maxlength="20"
+            >
+          </div>
+          <div>
+            <label for="kitchen">Virtuvė:</label>
+            <input 
+              type="text"
+              name="kitchen" id="kitchen"
+              required minlength="5" maxlength="25"
+              placeholder="Itališka"
+            >
+          </div>
+          <div>
+            <label for="location">Adresas:</label>
+            <input 
+              type="text"
+              name="location" id="location"
+              required
+              placeholder="Miestas, Gatvė namo numeris"
+            >
+          </div>
+          <div>
+            <label>Kainos vidurkis:</label>
+            <div>
+              <input 
+                type="radio"
+                name="priceRange" id="Mažos"
+                value="Mažos"
+                required
+              >
+              <label for="Mažos">Mažas</label>
+              <input 
+                type="radio"
+                name="priceRange" id="Vidutiniškos"
+                value="Vidutiniškos"
+              >
+              <label for="Vidutiniškos">Vidutinis</label>
+              <input 
+                type="radio"
+                name="priceRange" id="Aukštos"
+                value="Aukštos"
+              >
+              <label for="Aukštos">Didelis</label>
+            </div>
+          </div>
+          <div>
+            <label for="rating">Vertinimas:</label>
+            <input 
+              type="number"
+              name="rating" id="rating"
+              required step="0.1" min="0" max="10"
+            >
+          </div>
+          <div>
+            <label for="thumbnail">Patiekalo pavyzdys:</label>
+            <input 
+              type="url"
+              name="thumbnail" id="thumbnail"
+              required
+              placeholder="https://www.....jpg/png..."
+            >
+          </div>
+          <input type="submit" value="Pridėti">
+        </form>
+      </div>
+      <div>
+        <h3>Visi restoranai</h3>
+        <div id="restaurants">
+          <!-- <div>
+            <img src="" alt="">
+            <h3>name</h3>
+            <div>
+              <p>kitchen:</p>
+              <p>location:</p>
+              <p>pricerange:</p>
+              <p>rating:</p>
+            </div>
+          </div> -->
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer></footer>
+</body>
+</html>

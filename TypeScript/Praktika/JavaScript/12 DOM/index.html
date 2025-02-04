@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+	<script src="./main.js" defer></script>
+</head>
+<body>
+    <main>
+        <h1>DOM - Document Object Model</h1>
+        <!--NODE-->
+        <section>
+            <h3>Node</h3>
+            <p>
+                Node'as HTML elementas JS'o aplinkoje. Jis yra objektas su labai daug savybių ir metodų
+            </p>
+            <p>
+                Galima HTNL'ą pildyti innerHTML'u - rašant HTML kodą JS kaip stringą ir tuo stringu papildyti HTML'ą (įskiepyti/injectinti HTML kodą). Tuomet tas string'as HTML'e bus skaitomas kaip HTML kodas ir atvaizduojamas kaip atitinkami HTML elementai.<br>
+                Šitas būdas turi daug minusų, pradedant nuo saugumo, pabaigiant implementacija.
+            </p>
+            <p>
+                Geresnis būdas yra pildyti HTML'ą su JS'u - kurti node'us (HTML elementus) juos prilyginti kintamiesiems ir tuomet tuos node'us append'inti (patalpinti) į kitus HTML elementus.<br>
+                Node'ai yra kuriami , modifikuojami ir pridedami į HTML'ą naudojant Node'ų metodus.
+            </p>
+        </section>
+        <!--Savybės-->
+        <section>
+        <h3>Node savybės</h3>
+        <ul>
+            <li>attributes</li>
+            <li>children</li>
+            <li>classList</li>
+            <li>className</li>
+            <li>id</li>
+            <li>name</li>
+            <li>innerHTML</li>
+            <li>...Child</li>
+            <li>...Sibling</li>
+            <li>parent...</li>
+            <li>on...</li>
+            <li>selected</li>
+            <li>style</li>
+            <li>textContent</li>
+            <li>value</li>
+            <li>valueAsNumber</li>
+            <li>...</li>
+        </ul>
+        </section>
+        <!--Metodai-->
+        <section>
+            <h3>Node Metodai</h3>
+
+            <ul>
+                <li>document.createElement('tagName')</li>
+                <li>document.createElement('tekstas koks tik nori...')</li>
+                <li>kam.appendChild(ką) - į kokį node'ą (kam) gale įdėsime kokį node'ą (ką)</li>
+                <li>kam.append(ką0, ką1, ką2...) - į kokį node'ą (kam) gale įdėsime kokį/ius node'ą/node'us/string'ą/string'us... (ką)</li>
+                <li>kam.prepend(ką0, ką1, ką2...) - į kokį node'ą (kam) pradžioje įdėsime kokį'ius node'ą/node'us/string'ą/string'us... (ką)</li>
+                <li>kam.setAttribute('name', 'value')</li>
+                <li>kam.classList 
+                    <ul>
+                        <li>add('vienaKlase', 'kitaKlase', 'treciaKlase'...)</li>
+                        <li>remove('vienaKlase', 'kitaKlase', 'treciaKlase'...)</li>
+                        <li>replace('klaseIsimti', 'klasePrideti')</li>
+                        <li>toggle('klase') - jei elementas klase turi - ją iįima, jeigu neturi - ją prideda</li>
+                        <li>...</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+        <!--Su innerHTML-->
+        <section id="suInnerHTML"></section>
+        <!--su createElement-->
+        <section id="suCreateElements"></section>
+        <section id="cardSection"></section>
+        <section id="sarasas"></section>
+    </main>
+</body>
+</html> 

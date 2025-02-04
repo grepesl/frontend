@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>29 paskaita - JS Form ir Events</title>
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./script.js" defer></script>
+</head>
+<body>
+  <header></header>
+  <main>
+    <section>  <!-- Form tag'ai ir atributai -->
+      <h2>Form tag'ai ir atributai</h2>
+      <div class="flex spaceA">
+        <div>
+          <h4>Tags</h4>
+          <ul>
+            <li>form</li>
+            <li>label</li>
+            <li>input</li>
+            <li>textarea</li>
+            <li>select</li>
+            <li>option</li>
+          </ul>
+        </div>
+        <div>
+          <h4>Attributes</h4>
+          <ul class="listTwoColumns">
+            <li>type:
+              <ul>
+                <li>text (default)</li>
+                <li>password</li>
+                <li>number</li>
+                <li>email</li>
+                <li>url</li>
+                <li>radio</li>
+                <li>checkbox</li>
+                <li>datetime-local</li>
+                <li>submit</li>
+                <li>...</li>
+              </ul>
+            </li>
+            <li>for</li>
+            <li>id</li>
+            <li>name</li>
+            <li>value</li>
+            <li>placeholder</li>
+            <li>required</li>
+            <li>checked</li>
+            <li>selected</li>
+            <li>disabled</li>
+            <li>min</li>
+            <li>max</li>
+            <li>step</li>
+            <li>...</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section> <!-- JS Test Form -->
+      <h2>JS Test Form</h2>
+      <form id="testForm">
+        <div>
+          <label for="vardas">Vardas</label>
+          <input type="text" id="vardas" name="vardas">
+        </div>
+        <div>
+          <label for="nuotrauka">Nuotrauka:</label>
+          <input type="url" id="nuotrauka" name="nuotrauka">
+        </div>
+        <div>
+          <label for="dob">Gimimo data:</label>
+          <input type="datetime-local" id="dob" name="dob">
+        </div>
+        <div>
+          <label for="amzius">Amžius:</label>
+          <input type="number" id="amzius" name="amzius">
+        </div>
+        <div>
+          <label>Lytis:</label>
+          <input type="radio" name="lytis" id="vyras" value="vyras">
+          <label for="vyras">Vyras</label>
+          <input type="radio" name="lytis" id="moteris" value="moteris">
+          <label for="moteris">Moteris</label>
+          <input type="radio" name="lytis" id="nenurodyti" value="undefined">
+          <label for="nenurodyti">Nenurodyti</label>
+        </div>
+        <div>
+          <label>Pomėgiai:</label>
+          <input type="checkbox" name="pomegiai" id="zaidimai" value="zaidimai">
+          <label for="zaidimai">Žaidimai</label>
+          <input type="checkbox" name="pomegiai" id="sportas" value="sportas">
+          <label for="sportas">Sportas</label>
+          <input type="checkbox" name="pomegiai" id="knygos" value="knygos">
+          <label for="knygos">Knygos</label>
+        </div>
+        <div>
+          <label for="miestas">Gyvenamasis miestas:</label>
+          <select name="miestas" id="miestas">
+            <option value="Kaunas">Kaunas</option>
+            <option value="Vilnius">Vilnius</option>
+            <option value="Klaipėda">Klaipėda</option>
+            <option value="Ukmergė">Ukmergė</option>
+            <option value="Alytus">Alytus</option>
+            <option value="Tauragė">Tauragė</option>
+            <option value="Šiauliai">Šiauliai</option>
+          </select>
+        </div>
+        <input type="submit" value="Pateikti formą">
+      </form>
+    </section>
+    <section> <!-- Skaičiuotuvas -->
+      <h2>Skaičiuotuvas</h2>
+      <form id="calculator">
+        <input 
+          type="number" 
+          id="nr1" name="nr1" 
+          step="0.01"
+          required
+          title="Enter first number"
+          placeholder="Enter first number"
+        >
+        <span>+</span>
+        <input type="number" id="nr2" name="nr2" step="0.01" required>
+        <input type="submit" value="Calculate">
+      </form>
+      <output></output>
+    </section>
+  </main>
+  <footer></footer>
+</body>
+</html>

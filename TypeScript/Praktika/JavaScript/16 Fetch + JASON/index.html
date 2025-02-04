@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./main.js" defer></script>
+</head>
+<body>
+    <main>
+        <!--API-->
+        <section>
+            <h2>API</h2>
+            <p>
+                Aplication Programming Interface - jūsų užklausa iš aplikacijos (front-end) yra išsiunčiama į serverį (back-end) ir jeigu viskas tvarkoje - tuomet grąžinami kokie nors duomenys pagal jūsų užklausą; jeigu kažkas negerai - grąžinama kažkokia error žinutė.
+            </p>
+            <p>
+                Kas yra API - video (pas ji nuoroda yra).
+            </p>
+        </section>
+        <!--JSON-->
+        <section>
+            <h2>JSON</h2>
+            <p>
+                JavaScriptNotation - duomenų formatas naudojamas requst'uose (užklausose).<br>
+                JSON formatas nuo JS objekto formato skiriasi tuo, kad: raktiniai žodžiai ir string reikšmės privalo būti dvigubuose kabutėse IR po paskutinio elemento masyve arba paskutinės reikšmės objekte NEDĖTI kablelio.
+            </p>
+            <p>
+                Tam, kad paverti JSON reikšmę į JS arba atvirkščiai, reikia naudoti JSON metodus:
+            </p>
+            <ul>
+                <li>JSON.parse(JSON_Duomuo) - paverčia JSON_Duomuo į JS sintaksę.</li>
+                <li>JSON.stringify(JS_Duomuo) - paverčia JS_Duomuo į JSON sintaksę</li>
+            </ul>
+        </section>
+        <!--Fetch-->
+        <section>
+            <h2>Fetch</h2>
+            <p>
+                Funkcija/metodas, kurio pagalba mes galime siūsti užklausas į serverį ir gauti kažkokius atsakymus.
+            </p>
+            <ol>
+                <li>Fetch'inant (siunčiant užklausą) nurodomas URL, galima nurodyti papildomas opcijas. Tarp tų opcijų yra metodai:
+                    <ul>
+                        <li>GET - gauti informacija (default)</li>
+                        <li>POST - siūsti info (sukurti naują duomenį)</li>
+                        <li>PUT - redaguoti info (pagal ID) (perrašo viską apart ID)</li>
+                        <li>PATCH - redaguoti info (pagal ID) (pakoreguoja arba prideda)</li>
+                        <li>DELETE - trinti info (pagal ID)</li>
+                    </ul>
+                </li>
+                <li>Apdoroti gautą info/atsakymą - paversti į JS duomenis</li>
+                <li>Naudoti gautą apdorotą info</li>
+                <li>Pagauti (catch) error ir kažką su juo daryti</li>
+                <li>Galiausiai (finally) dar kažką atlieki (nesvarbu buvo ar nebuvo error)</li>
+            </ol>
+        </section>
+        <!--PostMan-->
+        <section>
+            <h2>PostMan</h2>
+        </section>
+        <!--ISS-->
+        <h2>ISS</h2>
+        <p>We're tracking where is the ISS (International Space Station)</p>
+        <div>
+            <p>Latitude: <span id="lat">0.00</span> </p>
+            <p>Longitude: <span id="lon">0.00</span> </p>
+        </div>
+        <button id="refLoc">Refresh location</button>
+        <section>
+            <img src="" id="photo">
+            <p>Vardas: <span id="name"></span> </p>
+            <p>Amžius: <span id="age"></span> </p>
+            <p>El. paštas: <span id="gmail"></span> </p>
+            <button id="next">Kitas</button>
+        </section>
+        <section>
+            <p>Vardas: <span id="name2"></span> </p>
+            <p>Ar VIP: <span id="vip"></span> </p>
+        </section>
+    </main>
+</body>
+</html>

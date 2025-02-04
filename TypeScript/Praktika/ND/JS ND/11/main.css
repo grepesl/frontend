@@ -1,0 +1,57 @@
+#ticTacToe{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+    > h3{
+      font-size: 3rem;
+    }
+  
+    > table{
+      border: 5px solid black;
+      border-radius: 10px;
+  
+      > tbody > tr{
+        display: flex;
+  
+        > td{
+          width: 100px;
+          height: 100px;
+          border: 2px solid black;
+          border-radius: 5px;
+          font-size: 50px;
+          
+          display: grid;
+          place-items: center;
+          margin: 5px;
+        }
+        > td:hover{
+          background-color: antiquewhite;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  #fizzBuzz{
+    > h2{
+      text-align: center;
+    }
+  
+    > div{
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+  
+      > p{
+        width: 50px;
+        height: 50px;
+        border: 2px solid black;
+        border-radius: 5px;
+  
+        display: grid;
+        place-items: center;
+        text-align: center;
+      }
+    }
+  }

@@ -1,0 +1,46 @@
+#restaurants{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+  
+    > div{
+      width: 500px;
+      height: 300px;
+      border: 2px dashed black;
+      border-radius: 5px;
+  
+      position: relative;
+  
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 5fr;
+      gap: 10px;
+  
+      > img{
+        grid-row: span 2;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+  
+      > div{
+        /* display: grid;
+        grid-template: 1fr 1fr / 1fr 1fr;
+        place-items: center;
+        gap: 5px; */
+        > p:nth-child(3){
+          text-transform: lowercase;
+        }
+        > p:nth-child(3)::first-letter{
+          text-transform: uppercase;
+        }
+      }
+  
+      > .deleteButton{
+        position: absolute;
+        bottom: 5px;
+        right: 5px;
+      }
+    }
+  }

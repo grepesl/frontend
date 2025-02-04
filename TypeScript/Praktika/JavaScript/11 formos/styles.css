@@ -1,0 +1,25 @@
+body {
+    background-color: rgb(194, 162, 168);
+    height: 500vh;
+}
+section{
+
+    > h2{
+        text-align: center;
+        font-size: 3em;
+    }
+}
+.flex{
+    display: flex;
+    gap: 5px;
+}
+.spaceA {
+    justify-content: space-around;
+}
+.listTwoColumns {
+    columns: 2;
+
+    li {
+        margin-right: 5px;
+    }
+}

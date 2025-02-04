@@ -1,0 +1,46 @@
+body {
+    background-color: rgb(199, 173, 175);
+}
+
+#cardGame {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+    > h3{
+      font-size: 3rem;
+    }
+  
+    > table{
+      border: 5px solid #ffffff;
+      border-radius: 10px;
+  
+      > tbody > tr{
+        display: flex;
+        
+  
+        > td{
+          width: 100px;
+          height: 100px;
+          border: 2px solid #ffffff;
+          border-radius: 5px;
+          font-size: 50px;
+          background-color: rgb(218, 146, 158);
+          
+          
+          display: grid;
+          place-items: center;
+          margin: 5px;
+        }
+        > td:hover{
+          background-color: rgb(201, 164, 177);
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+.winner {
+  text-align: center;
+  background-color: red;
+}
