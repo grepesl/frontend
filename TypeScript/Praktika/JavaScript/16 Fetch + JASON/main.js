@@ -3,23 +3,23 @@
 
 // console.log('prieš fetch') 
 
-// const fetchISS = () => fetch(`https://api.wheretheiss.at/v1/satellites/25544`, {
-//     method: "GET"
-// }).then(response => {
-//     console.log(response);  
-//     return response.json();
-// }).then(data => {
-//     console.log(data);
-//     document.querySelector('#lat').textContent = data.latitude.toFixed(3);
-//     document.querySelector('#lon').textContent = data.longitude.toFixed(3);
-// }).catch(err => {
-//     console.log('error', err)
-// }).finally((niekoNera) => {
-//     console.log('finally', niekoNera);
-// });
-// fetchISS();
-// document.querySelector('#refLoc').addEventListener('click', fetchISS);
-// setInterval(fetchISS, 5000); // cia automatiskai info kiek laiko atsinaujina info
+const fetchISS = () => fetch(`https://api.wheretheiss.at/v1/satellites/25544`, {
+    method: "GET"
+}).then(response => {
+    console.log(response);  
+    return response.json();
+}).then(data => {
+    console.log(data);
+    document.querySelector('#lat').textContent = data.latitude.toFixed(3);
+    document.querySelector('#lon').textContent = data.longitude.toFixed(3);
+}).catch(err => {
+    console.log('error', err)
+}).finally((niekoNera) => {
+    console.log('finally', niekoNera);
+});
+fetchISS();
+document.querySelector('#refLoc').addEventListener('click', fetchISS);
+setInterval(fetchISS, 5000); // cia automatiskai info kiek laiko atsinaujina info
 
 // console.log('po fetcho') ;
 
@@ -78,22 +78,22 @@
 // El. pašto adresą
 
 
-// document.querySelector('#next').addEventListener('click', () => {
-//     fetch(`https://randomuser.me/api/`, {
-//         method: "GET"
-// }).then(response => {  
-//         return response.json();
-// }).then(data => {
-//     document.querySelector('#photo').src = data.results[0].picture.medium;
-//     document.querySelector('#name').textContent = data.results[0].name.first;
-//     document.querySelector('#age').textContent = data.results[0].dob.age;
-//     document.querySelector('#gmail').textContent = data.results[0].email;
-// }).catch(err => {
-//     console.log("error", err);
-// }).finally(() => {
+document.querySelector('#next').addEventListener('click', () => {
+    fetch(`https://randomuser.me/api/`, {
+        method: "GET"
+}).then(response => {  
+        return response.json();
+}).then(data => {
+    document.querySelector('#photo').src = data.results[0].picture.medium;
+    document.querySelector('#name').textContent = data.results[0].name.first;
+    document.querySelector('#age').textContent = data.results[0].dob.age;
+    document.querySelector('#gmail').textContent = data.results[0].email;
+}).catch(err => {
+    console.log("error", err);
+}).finally(() => {
 
-// })
-// });
+})
+});
 
 //2)Naudojant https://party-wedding.glitch.me/v1/party – pasiimkite informaciją iš šio puslapio ir naudodami skirtingus array metodus, transformuokite duomenis bei išveskite true/false ekrane – ar "Kristupas Lapeika" yra VIP, ar ne?
 

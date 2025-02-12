@@ -1,3 +1,5 @@
+import DeleteConfirmationMode from "./DeleteConfirmationMode";
+
 class Restaurant{
     constructor({ id, name, kitchen, location, priceRange, rating, thumbnail }){
       this.id = id;
@@ -36,12 +38,17 @@ class Restaurant{
       deleteButton.classList.add('deleteButton');
       deleteButton.addEventListener('click', () => {
         // trinimas be patvirtinimo
-        cardDiv.remove(); // ištrina iš ekrano
+        // cardDiv.remove(); // ištrina iš ekrano
         // ištrina iš duomenų bazės (data.json)
-        fetch(`http://localhost:3000/restaurants/${this.id}`, {
-          method: "DELETE"
-        });
+        // fetch(`http://localhost:3000/restaurants/${this.id}`, {
+        //   method: "DELETE"
+        // });
         // trinimą su patvirtinimu galima daryti naudojant modalą (modalą kurti naudojant dialog'ą)
+        const modal =new DeleteConfirmationMode({
+          id: this.id, cardDiv
+        })
+        cardDiv.appendChild(modal);
+        modal.showModal();
       });
   
       cardDiv.append(image, heading, infoDiv, deleteButton);

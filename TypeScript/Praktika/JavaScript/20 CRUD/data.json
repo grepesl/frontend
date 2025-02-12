@@ -1,0 +1,62 @@
+{
+    "movies": [
+      {
+        "id": "123",
+        "title": "Smile 2",
+        "genres": [
+          "Horror",
+          "Thriller",
+          "Mystery",
+          "Tragedy"
+        ],
+        "length": 127,
+        "releaseDate": "2024-10-18"
+      },
+      {
+        "id": "456",
+        "title": "Interstellar",
+        "genres": [
+          "Adventure",
+          "Sci-Fi",
+          "Drama"
+        ],
+        "length": 169,
+        "releaseDate": "2014-11-06"
+      },
+      {
+        "id": "789",
+        "title": "Terminator 2",
+        "genres": [
+          "Action",
+          "Adventure",
+          "Sci-Fi"
+        ],
+        "length": 137,
+        "releaseDate": "1991-07-01"
+      },
+      {
+        "id": "645",
+        "title": "El Camino",
+        "genres": [
+          "Crime",
+          "Drama",
+          "Thriller"
+        ],
+        "length": 122,
+        "releaseDate": "2019-10-11"
+      },
+      {
+        "title": "9",
+        "genres": [
+          "Action",
+          "Adventure",
+          "Animation",
+          "Fantasy"
+        ],
+        "length": 79,
+        "releaseDate": "2009-09-03",
+        "id": "780c"
+      }
+    ]
+  }
+  

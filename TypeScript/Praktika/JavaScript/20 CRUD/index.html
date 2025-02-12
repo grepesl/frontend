@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>40 paskaita - CRUD</title>
+  <link rel="stylesheet" href="./main.css">
+  <script src="./main.js" type="module"></script>
+</head>
+<body>
+  <header></header>
+  <main>
+    <section> <!-- Filmai -->
+      <h2>Pridėti Filmą</h2>
+      <form id="addMovie">
+        <div>
+          <label for="title">Title:</label>
+          <input 
+            type="text"
+            name="title" id="title"
+            placeholder="Name of the movie..."
+            required
+          >
+        </div>
+        <div>
+          <label for="genres">Genres:</label>
+          <input 
+            type="text"
+            name="genres" id="genres"
+            placeholder="genre1, genre2, genre3..."
+            required
+          >
+        </div>
+        <div>
+          <label for="length">Length minutes:</label>
+          <input 
+            type="number"
+            name="length" id="length"
+            required
+          >
+        </div>
+        <div>
+          <label for="releaseDate">Release Date:</label>
+          <input 
+            type="date"
+            name="releaseDate" id="releaseDate"
+            required
+          >
+        </div>
+        <input type="submit" value="Pridėti">
+      </form>
+    </section>
+    <section>
+      <h2>Mūsų Filmai</h2>
+      <div id="displayMovies">
+        <!-- <div class="movieCard">
+          <h3>Title</h3>
+          <p>Genres: 1, 2, 3</p>
+          <p>Length: 0h 0m</p>
+          <p>Release Date: </p>
+        </div> -->
+      </div>
+    </section>
+  </main>
+  <footer></footer>
+</body>
+</html>

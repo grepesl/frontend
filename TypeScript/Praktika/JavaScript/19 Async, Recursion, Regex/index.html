@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./main.js" defer></script>
+</head>
+<body>
+    <main>
+        <!--Async-->
+        <section>
+            <h2>Asinhroninis programavimas</h2>
+            <p>
+                Asincroninio programavimo idėja yra ta, kad kol vyksta vienas kažkoks veiksmas, gali vykti ir kitas veiksmas tuo pačiu metu. Atlikinėja keletą veiksmų vienu metu.
+            </p>
+            <h3>Async būdai</h3>
+            <ul>
+                <li>setTimeout(callback, time)</li>
+                <li>new Promise() => .then().catch().finally()</li>
+                <li>async function() {await}</li>
+            </ul>
+            <div>
+                <h3>setTimeout</h3>
+                <p>
+                    Yra funkcija, kur 5vykdto jai pateikt1 funkcij1 (callback) po nurodyto laiko.
+                </p>
+            </div>
+            <div>
+                <h3>Promise</h3>
+                <p>
+                    Ra6ant asinhronin5 kod1 yra kuriami pa=adai (Promise).<br>
+                    Promise'ai pažada grąžinti kažkokį tai atsakymą (resolve) arba error'ą (reject) po kažkiek laiko (neaišku kiek).<br>
+                    Kreipimosi metu į Promise'ą mes atsakymo dar neturime, jo turime laukti.
+                </p>
+                <h4>then catch finally</h4>
+                <p>
+                    Pažado atsakymo galime laukti su Promise.then(). To then() viduje rašome kodą, kuris kažką padarys su Pažado atsakymu.<br>
+                    Jeigu Pažadas grąžina kažkokią tai klaidą (error'ą) jį reikia pagauti ir kažką su juo nuveikti: Promise.then().catch()'o dalyje.<br>
+                    Galiausiai galime vykdyti Promise.then().catch().finally(), kuris vyksta tiek gaunant atsakymą, tiek gaunant error'ą. 
+                </p>
+                <div>
+                    <h3>Async function</h3>
+                    <h4>await</h4>
+                    <p>
+                        Kitas būdas laukti pažado yra naudojant await operratorių asinhroninės funkcijos viduje prieš kreipiantis į Promise.<br>
+                        Await operatorius nurodo, kad reikia nevykdyti toliau einančio kodą, kol nebus gautas atsakymas iš tos eilutės, kurioje jis parašytas.
+                    </p>
+                    <p>
+                        Async funkcija grąžina naują Promise.
+                    </p>
+                </div>
+                <div>
+                    <h3>try catch finally blokai</h3>
+                    <p>
+                        Try, catch ir finally blokai privalo būti naudojami funkcijos viduje nebūtinai asinchroninės, bet dažniausiai.<br>
+                        Šitie blokai veikia panašiu principu į .then().catch().finally().<br>
+                        Kadangi async funkcija neturi .then().catch().finally(), tai jos viduje tokį patį funkcionalumą galime sukurti naudojant try, catch ir finally blokus.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!--Recursion-->
+        <section>
+            <h2>Recursion</h2>
+            <p>
+                rekursija yra toks dalykas, kai funkcija kviečia pati save šitaip pateikdama į begalinį ciklą, Tam, kad ciklas nebūtų begalinis reikia funkcijos viduje turėti sąlygą.
+            </p>
+            <p>
+                Beveik viskas, kas gali būti atlikta su rekursija - gali būti atlikta ir su ciklais
+            </p>
+            <p>
+                Rekursija vietoj ciklų naudojama tuomet, kai kodas padaromas skaitomesnis/trumpesnis
+            </p>
+        </section>
+        <!--Regular Expression(regex)-->
+        <section>
+            <p>
+                Regular Expression arab kitaip sakant Regex yra paternas/šablonas/simbolių seka, skirta išreikšti tam tikrą teksto variaciją
+            </p>
+            <h3>Regex Simboliai</h3>
+            <ul>
+                <li>[] - šių skliaustelių viduje gali būti aprašytos simbolių klasės , tuos simbolius vardinant</li>
+                <li>[a-e] - nurodo, kad galimi simboliai yra nuo a iki e (a b c d e)</li>
+                <li>{nuo, iki} - šitų skliaustelių viduje gali nurodyti nuo iki skaičius kurie nusakys minimalų ir/ar simbolių kiekį</li>
+                <li>\ - escape simbolis, kas sekantis simbolis yra tiesiog tekstas ir neturi specialios reikšmės regex'ui</li>
+                <li>. - visi simboliai apart eilučių lūžio</li>
+                <li>() - šitų sklaisutelių viduje gali būti aprašytos simbolių grupės</li>
+                <li>| - veikia kaip OR sąlyga. Reikia, kad atitiktų simboliai prieš arba už |.</li>
+                <li>...</li>
+                <h3>Regex aprašymas Js'e</h3>
+                <ul>
+                    <li>const reg = /regularExpression/</li>
+                    <li>const reg = new RegExp('regularExpression')</li>
+                </ul>
+            </ul>
+        </section>
+    </main>
+</body>
+</html>
