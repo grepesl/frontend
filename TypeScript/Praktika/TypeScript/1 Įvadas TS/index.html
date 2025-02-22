@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./main.js" defer></script>
+</head>
+<body>
+    <header></header>
+    <main>
+        <!--TypeScript-->
+        <section>
+            <h2>TypeScript</h2>
+            <div>
+                <h3>TypeScript yra JavaScript superset'as</h3>
+                <p>
+                    Type script papildo JavaScript kalbą įvairiais tipais. Leidžia programuotojui nusttinėti kintamųjų, parametrų, grąžinimo... tipus. (pvz.: Pasakyti, kad kintamasis privalo būti string  tipo)
+                </p>
+                <p>
+                    TypeScript labai greit išpopuliarėjo apie 2018 kaip JS kalbos superset'as, dėl jo naudos dirbant komandose ir/ar prie didelių tobulinimų projektų.
+                </p>
+                <p>
+                    TypeScript tipų nurodymas naudingas, nes ji gaudo įvairiais llogine klaidas jau kodo rašymo metu, vitoj to, kad klaidos būtų atvaizduojamos kodo vykdymo metu.
+                </p>
+                <p>
+                    Puslapis nesupranta  TS tipo failų, dėl to prie HTML'o visiem reikia prikabinti JS failus. Tam, kad galėtume naudoti TS kodą savo puslapiuose, jį reikia kopiliuoti/konvertuoti į JS kodą. Tam, kad taip padarytume, reikia naudoti tsc komandą, kurią galime naudoti tik tuomet, jeigu mūsų projekte/įrenginyje yra įrašytas typescript'as ir jo config'as.
+                </p>
+            </div>
+        </section>
+        <!--Set-up-->
+        <section>
+            <h2>Set-up</h2>
+            <div>
+                <h3>TypeScript naudojimo įvadas</h3>
+                <ol>
+                    <li>įsirašyti node.js</li>
+                    <li>įsirašyti TS globaliai (npm install -g typescript)</li>
+                    <li>susikurti TS failą su projekte ir jame rašyti kažkokį TS kodą</li>
+                    <li>Susikurti TS config failą: tsc --init</li>
+                    <li>tsconfig.json faile pasikeisti norimus nustatymus</li>
+                    <li>sukompiliuoti TS failą į JS failą: tsc --watch main.ts</li>
+                </ol>
+            </div>
+            <div>
+                <h3>Es-Lint</h3>
+                <ol>
+                    <li>įsirašyti Es-Lint (globaliai arba lokaliai)</li>
+                    <li>pasikurti projekto package.json failą: npm init</li>
+                    <li>susikurti Es-Lint config failą: eslint --init</li>
+                    <li>pasikeisti norimus Es-Lint config nustatymus</li>
+                    <li>įsirašyti ir įgalinti ESlint papildinį (exyension) VS Code</li>
+                </ol>
+            </div>
+        </section>
+    </main>
+    <footer></footer>
+</body>
+</html>

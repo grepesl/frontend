@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header></header>
+    <main>
+        <!--TypeScript Config-->
+        <section>
+            <h2>TypeScript Config</h2>
+            <p>
+                TypeScript konfigūracijos failas yra skirtas nurodyti kaip .ts tipo failai, turi būti sukompiliuoti į .js tipo failus.<br>
+                Config failo nustatymų yra labai daug, čia aptarsime keletą jų:
+            </p>
+            <ul>
+                <li>target - į kurią JS'o versiją kodą versi</li>
+                <li>module - ES6 arba commonjs(required) nurodo kurią sintaksę faulų importavimui naudoti</li>
+                <li>rootDir - kuriame aplankale yra .ts failai, kuriuos reikia kompiliuoti į .js failus</li>
+                <li>outDir - kuriame aplankale atsiras sukompiliuoti .js failai</li>
+                <li>noImplcityAny - neleidžia naudoti "any" tipo</li>
+                <li>noUnusedLocal - neleidžia palikti nepanaudotų kintamųjų</li>
+                <li>noUnusedParameters - neleidžia palikti nepanaudotų parametrų</li>
+                <li>noImplicitReturns - nenustačius funkcijos grąžinimo kaip "void" reikalautų return statment'o</li>
+                <li>removeComments - sukompiliuotame kode nebūtų komentarų</li>
+                <li>skipLibCheck - ar praleisti tipų tikrinimą naudojant bibliotekas</li>
+                <li>exactOptionPropertyTypes - objektų kūrimas privalo atitikti jų tipą</li>
+                <li>forceConsistentCasingInFileNames - versti failus vadinti pagal vienodą struktūrą</li>
+                <li>strict - ar kodas privalo būti griežtos/tvarkingo sintaksės</li>
+                <li>alwaysStrict - sukompiliuoti .js failai turėtų  "use strict"</li>
+                <li>noImplicitThis - "this" privalo turėti tipą</li>
+                <li>noFallthroughCasesInSwitch - switch cases privalo turėti break'us</li>
+                <li>...</li>
+            </ul>
+        </section>
+        <!--Objektų tipai-->
+        <section>
+            <h2>Objektų tipai</h2> 
+            <div> 
+                <h3>Object</h3>
+                <p>
+                    Galime objektą aprašyti paprastai kaip tai darytume js, bet po to negalime patys nurodyti tipų objekto viduje. Tipai tampa automatiškai priskiriami priklausomi nuo reikšmės esanččios už raktinio žodžio.<br>
+                    Dėl to yra naudojami Type arba Interface norint aprašyti objektų tipus
+                </p>
+            </div>
+            <div>
+                <h3>Type alias</h3>
+                <p>
+                    Naudojamas norint sukurti objektų / masyvų / klasių / ... tipus.<br>
+                    Norint sukurti Type alias, reikia parašyti žodį "type" ir už jo pavaddinimą iš didžiosios raidės ir už lygybės nurodyti struktūrą<br>
+                    Type alias tipo priskyrimas nesiskiria nuo įprasto tipo priskyrimo (pvz.: const kintamasisi; Tipas = ...)
+                </p>
+            </div>
+            <div>
+                <h3>Interface</h3>
+                <p>
+                    Naudojamas norint sukurti objektų arba klasių struktūras.<br>
+                    Visą kitą labai panašu/identiška Type alias.
+                </p>
+            </div>
+        </section>
+        <!--Masyvų tipai-->
+        <section>
+            <h2>Masyvų tipai</h2>
+            <div>
+                <h3>Tuples</h3>
+                <p>
+                    Tuple yra nurodyto ilgio masyvas, kurio reikšmių tipai ir eiliškumas svarbūs. Kitaip pasakius - griežtos struktūros masyvas
+                </p>
+                <p>
+                    ["Petras", "Petraitis"] - tuple, kuris yra dviejų ilgio ir tiek pirmas, tiek antras elementai stringai.<br>
+                    {vardas:"Petras", pavarde:"Petraitis"} - tas pats gali būt išsaugota su objektu
+                </p>
+                <p>
+                    Tuple yra mažiau užimantis, greičio kodo nuskaitomas, bet mažiau programuotojai aiškus duomuo. Dėl to JS'e gan retai naudojams.
+                </p>
+            </div>
+            <div>
+                <h3>Array arba []</h3>
+                <p>
+                    Kuriant masyvo tipą, reikia nusirodyti masyvo viduje esančių reikšmių galimus tipus
+                </p>
+                <p>Masyvus galima aprašyti dvejais pagrindiniais būdais:</p>
+                <div>
+                    <h4>Array</h4>
+                    <p>
+                        type MasyvoTipas = Array<KintamojoTipas>
+                    </p>
+                </div>
+                <div>
+                    type MasyvoTipas = kintamojoTipas[] (pvz:. string[])
+                </div>
+                <div>
+                    <h4>[]</h4>
+                    <p>
+                        type MasyvoTipas
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section>
+            <h2>Objektai masyvuose</h2>
+            <p>
+                Kaip jau žinome, objektų talpinimas masyve yra viena dažniausiai pasitaikančių duomenų struktūrų. Dįl to turime žinoti kaip ją aprašyti su Ts'u.
+            </p>
+            <ol>
+                <li>Susikuriame objekto tipą (type Person = {})</li>
+                <li>Optional: Susikuriame masyvo su objektais tipą</li>
+                <li>Priskiriame masyvui su objektais, masyvo, kurio viduje yra nurodyto tipo objektai tipą. (const mas: Person[] =  [{},{}])</li>
+            </ol>
+        </section>
+        <!--Funkcijų tipai-->
+        <section>
+            <p>
+                Tipus galima sukurti ir funkcijoms, tuose tipuose reikia aprašyti funkcijų parametrus ir return statment'ą<br>
+                (pvz.: type FunkcijosTipas ž (par1: string, par2: number))
+            </p>
+        </section>
+    </main>
+</body>
+</html>

@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "noImplicitAny": true,
+    "removeComments": true,
+    "preserveConstEnums": true,
+    "sourceMap": false,
+    "preserveWatchOutput": true,
+    "pretty": true,
+    "target": "ES6"
+  },
+  "files": [
+    //"include": ["src/**/*"],
+    "src/primitive-types.ts",
+    "src/event-listener.ts"
+    // "sys.ts",
+    // "types.ts",
+    // "scanner.ts",
+    // "parser.ts",
+    // "utilities.ts",
+    // "binder.ts",
+    // "checker.ts",
+    // "emitter.ts",
+    // "program.ts",
+    // "commandLineParser.ts",
+    // "tsc.ts",
+    // "diagnosticInformationMap.generated.ts"
+  ]
+}

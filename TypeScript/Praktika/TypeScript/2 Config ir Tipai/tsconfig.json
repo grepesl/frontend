@@ -1,0 +1,35 @@
+{
+  "compilerOptions": {
+    "module": "ES6",
+    "noImplicitAny": true,
+    "removeComments": true,
+    "preserveConstEnums": true,
+    "sourceMap": false,
+    "preserveWatchOutput": true,
+    "pretty": true,
+    "target": "ES2017",
+    "rootDir": "./src",
+    "outDir": "./publick/scripts",
+    "noEmitOnError": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "noUnusedParameters": true
+  },
+  "files": [
+    //"include": ["src/**/*"],
+    "src/main.ts",
+    // "sys.ts",
+    // "types.ts",
+    // "scanner.ts",
+    // "parser.ts",
+    // "utilities.ts",
+    // "binder.ts",
+    // "checker.ts",
+    // "emitter.ts",
+    // "program.ts",
+    // "commandLineParser.ts",
+    // "tsc.ts",
+    // "diagnosticInformationMap.generated.ts"
+  ]
+}

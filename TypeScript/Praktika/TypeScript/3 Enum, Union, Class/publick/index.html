@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header></header>
+    <main>
+        <!--Union-->
+        <section>
+            <h2>Union</h2>
+            <div>
+                <h3>OR - |</h3>
+                <p>
+                    Nurodo, kad galime priskirti vieną arba kitą arba trečią... tipą, kitaip pasakius vieną iš išvardintų tipų<br>
+                    (pvz.: type StringOrNumber = string | number);
+                </p>
+            </div>
+            <div>
+                <h3>AND - &</h3>
+                <p>
+                    Nurodo, kad reikia paskirti IR vieną IR kitą IR trečią... tipus, kitaip pasakius visus išvadintus<br>
+                    (pvz.: type Asmuo = {vardas: string, pavarde: string}; type AsmuoBonus = {amzius: number, ugis:number}; type PilnasAsmuo = Asmuo & AsmuoBonus;)
+                </p>
+            </div>
+            <div>
+                <h3>(Type1 | type2)[]</h3>
+                <p>
+                    Jeigu norime mi6raus masyvo, reikia jo galimus tipus apra6yti prie6 masyvo sklaistus, paprastuose skliausteliuose vardinant tipus su OR simboliu<br>
+                    (pvz.: type StringIrNumberArray = (string | number)[];)
+                </p>
+            </div>
+        </section>
+        <!--Tuple-->
+        <section>
+            <h2>Tuple</h2>
+            <p>
+                Tuple yra griežtos struktūros masyvas. Yra nurodomas masyvo ilgis (pagal tai kiek tipų jo viduje išvardinta) ir kiekvienas jo elementas privalo turėti nuosavą tipą (tipai gali būti skirtingi)<br>
+                (pvz.: type Coordinates = [number, number];)
+            </p>
+        </section>
+        <!--Literal Types-->
+        <section>
+            <h2>Literal Types</h2>
+            <p>
+                Naudojami norint sukonkretinti funkcijos parametro galimus variantus arba sukonkretinti objekto savybės gaimus variantus. Tokiu būdu duodame pasirinkti tik vieną iš aprašytų variantų, vietoj to kad rašyti betką iš string ar nuber ar boolean reikšmių.<br>
+                (pvz.: type TShirt_size = 'small' | 'medium' | 'large';)
+            </p>
+        </section>
+        <!--Enum-->
+        <section>
+            <h2>Enum</h2>
+            <p>
+                enum - enumerator yra skirtas sukurti pasirinkimo variantų sąrašą. Sąrašas turi pavadinimus ir už kiekvieno pavainimo slypi skiačius (kuris yra generuojamas eilės tvarka automatiškai) arba kažkokia reikšmė (kurią pats nusirodai kurdamas enum'ą).<br>
+                Jo nauda yra tokia kaip ir literal types, kad nebūtų netyčia panaudojamos/priskiriamos neegzistuojančios reikšmės.
+            </p>
+        </section>
+        <section>
+            <h2>Class</h2>
+            <p>
+                Klasės TS's yra aprašomas šiek tiek kitaip negu JS'e.<br>
+                TS'e prieš konstruktorių, mes TURIME susikurti savybes (properties) su tipais ir taip pat galime priskirti joms prieinamumus (public, private arba readonly).
+            </p>
+            <h3>Prieinamumai (prefix modifiers)</h3>
+            <ul>
+            <li>public (default) - nieko nekeičia</li>
+            <li>private - pasiekiamas tik Klasės viduje. Norint pasiekti už klasės NEBAIGTA RASYT </li>
+            </ul>
+        </section>
+    </main>
+</body>
+</html>
