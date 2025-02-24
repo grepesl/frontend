@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>52 paskaita - Tipų formavimas ir susaistymas</title>
+  <link rel="stylesheet" href="./main.css">
+  <script defer src="./scripts/main.js"></script>
+</head>
+<body>
+  <header></header>
+  <main>
+    <!--Assertations-->
+    <section>
+        <h2>Assertations - prielaidos</h2>
+        <p>
+            Naudodami prielaidas (assertations - as) mes nurodome TS'ui, kad kažuris mūsų kintamasisi TIKRAI nbus kažkokio tais tipo. Nes jeigu mes turime kintamąjį, kuris nėra užpildytas deuomenims tuo momentu kode, o turi būti kažkur iš kažkur paimta ir priskiriama - TS'as įžiūri atvejį, kai tipas gali būti null ar undefined, o ne tai ko galbūt programuotojas tikisi. Dėl to reikia pradėti rašyti visokias tikrinimo sąlygas prieš judant prie pagrindinio kodo.<br>
+            (pvz.: const kazkasIsHtml = document.quearySelector('selector') as MusuTipas;)
+        </p>
+        <div class="flex">
+            <button id="decr">Decrement</button>
+            <span id="count">0</span>
+            <button id="incr">Increment</button>
+        </div>
+    </section>
+    <!--Types VS Interface-->
+    <section>
+      <h2>Types VS Interface</h2>
+      <p>
+        Interface gali būti naudojamas kuriant klasių arba objektų aprašymą.<br>
+        Type gali būti naudojamas kuriant betkokį aprašymą.
+      </p>
+      <p>
+        Interface gali būti pratęstas kitų Interface naudojant 'extends' prierašą.<br>
+        Type gali būti pratęstas kitu Type naudojant '&' (interaction) ženkliuku.
+      </p>
+      <p>
+        Interface gali būti papildytas naujomis savybėmis/metodais, negrįžtant prie originalaus Interface aprašymo, o tiesiog kreipiantis į Interface neegzistuojantį tipą ir jį nurodant. (main.ts - line 22)<br>
+        Type gali būti papildytas naujomis savybėmis/metodais/reikšmėmis/..., bet norint tai atlikti būtina sugrįžti prie tos vietos, kur jis originaliai skurtas.
+      </p>
+      <p>
+        Kuriant Interface negalima nurodyti vieno arba kito varianto. Reikia susikurti du Interface, su vienu ir kitu variantu ir kuriant duomenį naudoti vieną arba kitą Interface<br>
+        Kuriant Type galima nurodyti vieną arba kitą variantĄ
+      </p>
+      <p>
+        <b>
+          Išvada (mano asmeninė (Rokas Banaitis)): Siūlyčiau naudotūi Type vietoj Interface. Nes Type gali atlikti beveik viską ka atlieka Interface, o taip pat daug kitų dalukų (lanksčiau), kurių Interface negali.
+        </b>
+      </p>
+    </section>
+    <!--Stuff about Types-->
+    <section>
+      <h2></h2>
+      <div>
+        <h3>Pasirinkti vieną reikšmės tipą iš objekto tipo</h3>
+        <p>
+          Tai galima padaryt įvairiais būdais:<br>
+          pats paprasčiausias - ranka atkartoti tipą sr tipų variantus. Tai yra blogai, nes jeigu kwičiasi originaalusis - tau reikia rankiniu būdu vėl reiia keisti ir kitus.<br>
+          Dėl tp reiktų naudot Tipų Indeksu operatorių. Kuris tau leidžia paimti vieną specifinį tipą iš objekto tipo. Ir jeigu objektao tipas keičiasi, taviškis pakis automatiškai.<br>
+          Dar galima naudoti Utility tipą Pick, bet jis paims ne tik vieną reikšmę, bet visą objektą su viena reikšme.<br>
+          (code = main.js - line 68)
+        </p>
+      </div>
+      <div>
+        <h3>Tipų apjungimas</h3>
+        <p>
+          Galima apjungti du tipus naudojant & ženklą, jau esam ne vieną syk kalbėja, tad nesikartosim čia, žiūrėt kitas paskaitas.
+        </p>
+      </div>
+      <div>
+        <h3>Neprivalomos tipų savybės</h3>
+        <p>
+          Kuriant objektų tipus, galime nurodyti, kad tam tikros savybės nėra būtinos. Tai labai lengvai nurodoma prirašant "?" ženklą prie savybės pavadinimo. 
+        </p>
+      </div>
+      <div>
+        <h3>Utility(pagalbinai) tipai</h3>
+        <p>
+          Utility tipai pagelbėja kurti naujus tipus iš jau egzistuojančių tipų. Kai naudoji pagalbinius tibus galima keleta j7 apjungti 5 vieną
+        </p>
+        <ul>
+          <li>Pick&lt;Tipas, savybe1, savybe2..&gt - paima iš nurodyto tipo nurodytas savybes</li>
+          <li>Omit&lt;Tipas, savybe1, savybe2..&gt - paima iš nurodyto tipo nenurodytas savybes</li>
+          <li>Partial - nebūtinos</li>
+          <li>Required - nūtinos</li>
+          <li>Readonly - nekintančiomis</li>
+          <li>...</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+  <footer></footer>
+</body>
+</html>
