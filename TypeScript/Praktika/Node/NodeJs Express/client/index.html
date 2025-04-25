@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>92 paskaita - NodeJS Express</title>
+    <link rel="stylesheet" href="main.css">
+    <script type="module" src="main.js"></script>
+</head>
+<body>
+<header></header>
+<main>
+    <section id="hero">
+        <h1>Books</h1>
+        <p>
+            Go read more books or something...
+        </p>
+    </section>
+    <section id="addForm">
+        <h2>Add new Book</h2>
+        <form>
+            <div>
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" required>
+            </div>
+            <div>
+                <label for="author">Author</label>
+                <input type="text" name="author" id="author" required>
+            </div>
+            <input type="submit" value="Add">
+        </form>
+    </section>
+    <section id="library">
+        <h2>Our Library</h2>
+        <div id="booksContainer"></div>
+    </section>
+</main>
+<footer></footer>
+</body>
+</html>

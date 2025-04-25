@@ -1,0 +1,68 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    background-color: #4f4f4f;
+    color: white;
+}
+
+main{
+    > section{
+        padding: 20px 50px;
+    }
+
+    > #hero{
+        font-size: 24px;
+        > h1{
+            text-align: center;
+        }
+        > p{
+            text-align: center;
+        }
+    }
+    > #addForm{
+        font-size: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        > form{
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+
+            > div{
+                display: grid;
+                grid-template-columns: 1fr 2fr;
+            }
+        }
+    }
+    > #library{
+        font-size: 20px;
+
+        > h2{
+            text-align: center;
+        }
+        > div#booksContainer{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+
+            > div{
+                border: 1px solid black;
+                border-radius: 5px;
+                padding: 10px 5px;
+
+                > h3{
+                    text-align: center;
+                    margin-top: 0;
+                }
+                > h4{
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}
